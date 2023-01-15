@@ -2232,6 +2232,62 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+            "name": "ibrahim-bedir/filament-dynamic-settings-page",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ibrahim-bedir/filament-dynamic-settings-page.git",
+                "reference": "299c39199930dc7d4c3e3d62476668a4f7cee54e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ibrahim-bedir/filament-dynamic-settings-page/zipball/299c39199930dc7d4c3e3d62476668a4f7cee54e",
+                "reference": "299c39199930dc7d4c3e3d62476668a4f7cee54e",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.12",
+                "laravel/framework": "^9.1",
+                "php": "^8.0"
+            },
+            "time": "2022-12-23T12:28:37+00:00",
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "IbrahimBedir\\FilamentDynamicSettingsPage\\DynamicSettingsPageServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "IbrahimBedir\\FilamentDynamicSettingsPage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "İbrahim Bedir",
+                    "email": "ibrahimbedir43@gmail.com"
+                }
+            ],
+            "keywords": [
+                "filament",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/ibrahim-bedir/filament-dynamic-settings-page/issues",
+                "source": "https://github.com/ibrahim-bedir/filament-dynamic-settings-page/tree/main"
+            },
+            "install-path": "../ibrahim-bedir/filament-dynamic-settings-page"
+        },
+        {
             "name": "jeffgreco13/filament-breezy",
             "version": "v1.4.10.1",
             "version_normalized": "1.4.10.1",

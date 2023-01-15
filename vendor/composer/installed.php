@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'bb7a01ff33820a1fbf9b168131d60f24ebe974ec',
+        'reference' => '8406b3cf8caccb0febf347e6b78ff6f20d0dea74',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -301,6 +301,17 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'ibrahim-bedir/filament-dynamic-settings-page' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '299c39199930dc7d4c3e3d62476668a4f7cee54e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ibrahim-bedir/filament-dynamic-settings-page',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
         'illuminate/auth' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -520,7 +531,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'bb7a01ff33820a1fbf9b168131d60f24ebe974ec',
+            'reference' => '8406b3cf8caccb0febf347e6b78ff6f20d0dea74',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

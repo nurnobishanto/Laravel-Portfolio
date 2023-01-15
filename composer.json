@@ -11,6 +11,7 @@
         "filament/filament": "^2.16",
         "filipfonal/filament-log-manager": "^1.1",
         "guzzlehttp/guzzle": "^7.2",
+        "ibrahim-bedir/filament-dynamic-settings-page": "dev-main",
         "jeffgreco13/filament-breezy": "v1.4.10.1",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
@@ -33,7 +34,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
