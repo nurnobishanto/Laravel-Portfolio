@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'voku\\' => array($vendorDir . '/voku/portable-ascii/src/voku'),
+    'io3x1\\FilamentCommands\\' => array($vendorDir . '/3x1io/filament-commands/src'),
+    'io3x1\\FilamentBrowser\\' => array($vendorDir . '/3x1io/filament-browser/src'),
     'Z3d0X\\FilamentLogger\\Database\\Factories\\' => array($vendorDir . '/z3d0x/filament-logger/database/factories'),
     'Z3d0X\\FilamentLogger\\' => array($vendorDir . '/z3d0x/filament-logger/src'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),

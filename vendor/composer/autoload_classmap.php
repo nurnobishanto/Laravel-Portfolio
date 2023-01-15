@@ -6226,5 +6226,11 @@ return array(
     'Z3d0X\\FilamentLogger\\Resources\\ActivityResource' => $vendorDir . '/z3d0x/filament-logger/src/Resources/ActivityResource.php',
     'Z3d0X\\FilamentLogger\\Resources\\ActivityResource\\Pages\\ListActivities' => $vendorDir . '/z3d0x/filament-logger/src/Resources/ActivityResource/Pages/ListActivities.php',
     'Z3d0X\\FilamentLogger\\Resources\\ActivityResource\\Pages\\ViewActivity' => $vendorDir . '/z3d0x/filament-logger/src/Resources/ActivityResource/Pages/ViewActivity.php',
+    'io3x1\\FilamentBrowser\\FilamentBrowserProvider' => $vendorDir . '/3x1io/filament-browser/src/FilamentBrowserProvider.php',
+    'io3x1\\FilamentBrowser\\Http\\Controllers\\BrowserController' => $vendorDir . '/3x1io/filament-browser/src/Http/Controllers/BrowserController.php',
+    'io3x1\\FilamentBrowser\\Pages\\Browser' => $vendorDir . '/3x1io/filament-browser/src/Pages/Browser.php',
+    'io3x1\\FilamentCommands\\FilamentCommandsProvider' => $vendorDir . '/3x1io/filament-commands/src/FilamentCommandsProvider.php',
+    'io3x1\\FilamentCommands\\Http\\Controllers\\GuiController' => $vendorDir . '/3x1io/filament-commands/src/Http/Controllers/GuiController.php',
+    'io3x1\\FilamentCommands\\Pages\\Artisan' => $vendorDir . '/3x1io/filament-commands/src/Pages/Artisan.php',
     'voku\\helper\\ASCII' => $vendorDir . '/voku/portable-ascii/src/voku/helper/ASCII.php',
 );

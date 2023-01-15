@@ -21,9 +21,9 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'b69d5f1f95cd1ed438c038b6cbcc45b5' => __DIR__ . '/..' . '/filament/notifications/src/Testing/Autoload.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '9261e07cd92c53dcc971c7c88c176c04' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/helpers.php',
         '9720327d09ed9a4ba00c9b5071b71c7d' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/standards.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2ad94ea6f6f6013119e9abcf4e302a08' => __DIR__ . '/..' . '/filament/forms/src/helpers.php',
         '2c620c99f96a2b964346b45a4d1d1e64' => __DIR__ . '/..' . '/spatie/invade/src/functions.php',
         'eee56a36884c3af04e64bac85043e771' => __DIR__ . '/..' . '/akaunting/laravel-money/src/helpers.php',
@@ -46,12 +46,18 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'i' => 
+        array (
+            'io3x1\\FilamentCommands\\' => 23,
+            'io3x1\\FilamentBrowser\\' => 22,
         ),
         'Z' => 
         array (
@@ -230,6 +236,14 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'io3x1\\FilamentCommands\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/3x1io/filament-commands/src',
+        ),
+        'io3x1\\FilamentBrowser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/3x1io/filament-browser/src',
         ),
         'Z3d0X\\FilamentLogger\\Database\\Factories\\' => 
         array (
@@ -6926,6 +6940,12 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'Z3d0X\\FilamentLogger\\Resources\\ActivityResource' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Resources/ActivityResource.php',
         'Z3d0X\\FilamentLogger\\Resources\\ActivityResource\\Pages\\ListActivities' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Resources/ActivityResource/Pages/ListActivities.php',
         'Z3d0X\\FilamentLogger\\Resources\\ActivityResource\\Pages\\ViewActivity' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Resources/ActivityResource/Pages/ViewActivity.php',
+        'io3x1\\FilamentBrowser\\FilamentBrowserProvider' => __DIR__ . '/..' . '/3x1io/filament-browser/src/FilamentBrowserProvider.php',
+        'io3x1\\FilamentBrowser\\Http\\Controllers\\BrowserController' => __DIR__ . '/..' . '/3x1io/filament-browser/src/Http/Controllers/BrowserController.php',
+        'io3x1\\FilamentBrowser\\Pages\\Browser' => __DIR__ . '/..' . '/3x1io/filament-browser/src/Pages/Browser.php',
+        'io3x1\\FilamentCommands\\FilamentCommandsProvider' => __DIR__ . '/..' . '/3x1io/filament-commands/src/FilamentCommandsProvider.php',
+        'io3x1\\FilamentCommands\\Http\\Controllers\\GuiController' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Http/Controllers/GuiController.php',
+        'io3x1\\FilamentCommands\\Pages\\Artisan' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Pages/Artisan.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

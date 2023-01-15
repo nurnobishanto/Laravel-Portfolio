@@ -6,6 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "3x1io/filament-browser": "^1.0",
+        "3x1io/filament-commands": "^1.1",
         "alexjustesen/filament-spatie-laravel-activitylog": "^0.6.0",
         "bezhansalleh/filament-shield": "^2.3",
         "filament/filament": "^2.16",

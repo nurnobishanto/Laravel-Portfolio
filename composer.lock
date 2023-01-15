@@ -4,8 +4,110 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71dd01f7ecd993e70bb69bfb92a7a47f",
+    "content-hash": "272d83603dbc79016fc1603e8c4b2b59",
     "packages": [
+        {
+            "name": "3x1io/filament-browser",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/3x1io/filament-browser.git",
+                "reference": "66247b878049067440fee86a0f20286a470a160e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/3x1io/filament-browser/zipball/66247b878049067440fee86a0f20286a470a160e",
+                "reference": "66247b878049067440fee86a0f20286a470a160e",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.9",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "io3x1\\FilamentBrowser\\FilamentBrowserProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "io3x1\\FilamentBrowser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "3x1",
+                    "email": "info@3x1.io",
+                    "role": "CEO"
+                }
+            ],
+            "description": "File & Folders & Media Browser With Code Editor",
+            "homepage": "https://3x1.io",
+            "keywords": [
+                ".env editor",
+                "browser",
+                "code",
+                "editor",
+                "filament",
+                "file",
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "issues": "https://github.com/3x1io/filament-browser/issues",
+                "source": "https://github.com/3x1io/filament-browser/tree/v1.0.1"
+            },
+            "time": "2022-09-06T09:22:05+00:00"
+        },
+        {
+            "name": "3x1io/filament-commands",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/3x1io/filament-commands.git",
+                "reference": "18c67f00466889a2f9ec771150dc08ac75577473"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/3x1io/filament-commands/zipball/18c67f00466889a2f9ec771150dc08ac75577473",
+                "reference": "18c67f00466889a2f9ec771150dc08ac75577473",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "io3x1\\FilamentCommands\\FilamentCommandsProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "io3x1\\FilamentCommands\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Beautiful package for [laravel:artisan] gui for cool kids.",
+            "support": {
+                "issues": "https://github.com/3x1io/filament-commands/issues",
+                "source": "https://github.com/3x1io/filament-commands/tree/v1.1.2"
+            },
+            "time": "2022-11-03T10:20:34+00:00"
+        },
         {
             "name": "akaunting/laravel-money",
             "version": "3.1.2",
@@ -9789,7 +9891,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ibrahim-bedir/filament-dynamic-settings-page": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
