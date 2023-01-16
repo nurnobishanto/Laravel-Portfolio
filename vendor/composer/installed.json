@@ -109,6 +109,70 @@
             "install-path": "../3x1io/filament-commands"
         },
         {
+            "name": "3x1io/filament-user",
+            "version": "v1.1.6",
+            "version_normalized": "1.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/3x1io/filament-user.git",
+                "reference": "a353309c4d8fab75d83988a362a51df4cf924755"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/3x1io/filament-user/zipball/a353309c4d8fab75d83988a362a51df4cf924755",
+                "reference": "a353309c4d8fab75d83988a362a51df4cf924755",
+                "shasum": ""
+            },
+            "require": {
+                "bezhansalleh/filament-shield": "^2.1",
+                "filament/filament": "^2.9",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.12",
+                "stechstudio/filament-impersonate": "^2.5"
+            },
+            "time": "2022-08-01T08:14:03+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "io3x1\\FilamentUser\\FilamentUserProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "io3x1\\FilamentUser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "3x1",
+                    "email": "info@3x1.io",
+                    "role": "CEO"
+                }
+            ],
+            "description": "User Manager Resource For Filament Admin",
+            "homepage": "https://3x1.io",
+            "keywords": [
+                "cli",
+                "filament",
+                "laravel",
+                "resource",
+                "ui",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/3x1io/filament-user/issues",
+                "source": "https://github.com/3x1io/filament-user/tree/v1.1.6"
+            },
+            "install-path": "../3x1io/filament-user"
+        },
+        {
             "name": "akaunting/laravel-money",
             "version": "3.1.2",
             "version_normalized": "3.1.2.0",
@@ -1588,17 +1652,17 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.16.61",
-            "version_normalized": "2.16.61.0",
+            "version": "v2.16.62",
+            "version_normalized": "2.16.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/admin.git",
-                "reference": "dd6fd246f68fb6d2d14322a98d2354c7daa241bf"
+                "reference": "4c9a2166e86792bf360dac75891cb7037c6d0e35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/admin/zipball/dd6fd246f68fb6d2d14322a98d2354c7daa241bf",
-                "reference": "dd6fd246f68fb6d2d14322a98d2354c7daa241bf",
+                "url": "https://api.github.com/repos/filamentphp/admin/zipball/4c9a2166e86792bf360dac75891cb7037c6d0e35",
+                "reference": "4c9a2166e86792bf360dac75891cb7037c6d0e35",
                 "shasum": ""
             },
             "require": {
@@ -1622,7 +1686,7 @@
                 "ryangjchandler/blade-capture-directive": "^0.2",
                 "spatie/laravel-package-tools": "^1.9"
             },
-            "time": "2023-01-12T10:11:57+00:00",
+            "time": "2023-01-16T09:27:16+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1654,17 +1718,17 @@
         },
         {
             "name": "filament/forms",
-            "version": "v2.16.61",
-            "version_normalized": "2.16.61.0",
+            "version": "v2.16.62",
+            "version_normalized": "2.16.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
-                "reference": "f638d38b743a1089f66fc98e470cd9dfc4720097"
+                "reference": "cad9f0f445ae458cf49d70da47b333ec5554d267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/forms/zipball/f638d38b743a1089f66fc98e470cd9dfc4720097",
-                "reference": "f638d38b743a1089f66fc98e470cd9dfc4720097",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/cad9f0f445ae458cf49d70da47b333ec5554d267",
+                "reference": "cad9f0f445ae458cf49d70da47b333ec5554d267",
                 "shasum": ""
             },
             "require": {
@@ -1683,7 +1747,7 @@
                 "php": "^8.0",
                 "spatie/laravel-package-tools": "^1.9"
             },
-            "time": "2023-01-12T10:11:56+00:00",
+            "time": "2023-01-16T09:27:30+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1715,8 +1779,8 @@
         },
         {
             "name": "filament/notifications",
-            "version": "v2.16.61",
-            "version_normalized": "2.16.61.0",
+            "version": "v2.16.62",
+            "version_normalized": "2.16.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -1771,8 +1835,8 @@
         },
         {
             "name": "filament/support",
-            "version": "v2.16.61",
-            "version_normalized": "2.16.61.0",
+            "version": "v2.16.62",
+            "version_normalized": "2.16.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1824,8 +1888,8 @@
         },
         {
             "name": "filament/tables",
-            "version": "v2.16.61",
-            "version_normalized": "2.16.61.0",
+            "version": "v2.16.62",
+            "version_normalized": "2.16.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
@@ -2700,6 +2764,77 @@
                 }
             ],
             "install-path": "../jeffgreco13/filament-breezy"
+        },
+        {
+            "name": "lab404/laravel-impersonate",
+            "version": "1.7.3",
+            "version_normalized": "1.7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/404labfr/laravel-impersonate.git",
+                "reference": "7c1f9c5cefd40247993f52f4b7724fd8b580084f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/404labfr/laravel-impersonate/zipball/7c1f9c5cefd40247993f52f4b7724fd8b580084f",
+                "reference": "7c1f9c5cefd40247993f52f4b7724fd8b580084f",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^6.0 | ^7.0 | ^8.0 | ^9.0",
+                "php": "^7.2 | ^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "orchestra/database": "^4.0 | ^5.0 | ^6.0 | ^7.0",
+                "orchestra/testbench": "^4.0 | ^5.0 | ^6.0 | ^7.0",
+                "phpunit/phpunit": "^7.5 | ^8.0 | ^9.0"
+            },
+            "time": "2022-01-15T13:39:35+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lab404\\Impersonate\\ImpersonateServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Lab404\\Impersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marceau Casals",
+                    "email": "marceau@casals.fr"
+                }
+            ],
+            "description": "Laravel Impersonate is a plugin that allows to you to authenticate as your users.",
+            "keywords": [
+                "auth",
+                "impersonate",
+                "impersonation",
+                "laravel",
+                "laravel-package",
+                "laravel-plugin",
+                "package",
+                "plugin",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/404labfr/laravel-impersonate/issues",
+                "source": "https://github.com/404labfr/laravel-impersonate/tree/1.7.3"
+            },
+            "install-path": "../lab404/laravel-impersonate"
         },
         {
             "name": "laravel/framework",
@@ -3647,37 +3782,37 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.10.8",
-            "version_normalized": "2.10.8.0",
+            "version": "v2.11.0",
+            "version_normalized": "2.11.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "4cc5dedaab1e9512efb4d528fde67df98e9b465a"
+                "reference": "8667099d5889cab760d1d0083cdcebaa3d595733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/4cc5dedaab1e9512efb4d528fde67df98e9b465a",
-                "reference": "4cc5dedaab1e9512efb4d528fde67df98e9b465a",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/8667099d5889cab760d1d0083cdcebaa3d595733",
+                "reference": "8667099d5889cab760d1d0083cdcebaa3d595733",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^7.0|^8.0|^9.0",
-                "illuminate/support": "^7.0|^8.0|^9.0",
-                "illuminate/validation": "^7.0|^8.0|^9.0",
+                "illuminate/database": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/validation": "^7.0|^8.0|^9.0|^10.0",
                 "league/mime-type-detection": "^1.9",
                 "php": "^7.2.5|^8.0",
                 "symfony/http-kernel": "^5.0|^6.0"
             },
             "require-dev": {
                 "calebporzio/sushi": "^2.1",
-                "laravel/framework": "^7.0|^8.0|^9.0",
+                "laravel/framework": "^7.0|^8.0|^9.0|^10.0",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench": "^5.0|^6.0|^7.0",
-                "orchestra/testbench-dusk": "^5.2|^6.0|^7.0",
+                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0|^7.0|^8.0",
                 "phpunit/phpunit": "^8.4|^9.0",
                 "psy/psysh": "@stable"
             },
-            "time": "2022-12-21T22:28:25+00:00",
+            "time": "2023-01-15T23:43:31+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3711,7 +3846,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.10.8"
+                "source": "https://github.com/livewire/livewire/tree/v2.11.0"
             },
             "funding": [
                 {
@@ -7781,6 +7916,53 @@
             "install-path": "../spatie/laravel-permission"
         },
         {
+            "name": "stechstudio/filament-impersonate",
+            "version": "2.11",
+            "version_normalized": "2.11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stechstudio/filament-impersonate.git",
+                "reference": "d48bf9fc769793a78309ede91bc7ffd582c743d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stechstudio/filament-impersonate/zipball/d48bf9fc769793a78309ede91bc7ffd582c743d0",
+                "reference": "d48bf9fc769793a78309ede91bc7ffd582c743d0",
+                "shasum": ""
+            },
+            "require": {
+                "lab404/laravel-impersonate": "^1.7"
+            },
+            "require-dev": {
+                "filament/filament": "^2.5"
+            },
+            "time": "2023-01-09T17:35:37+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "STS\\FilamentImpersonate\\FilamentImpersonateServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "STS\\FilamentImpersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Filament record action that allows you to impersonate your users.",
+            "support": {
+                "issues": "https://github.com/stechstudio/filament-impersonate/issues",
+                "source": "https://github.com/stechstudio/filament-impersonate/tree/2.11"
+            },
+            "install-path": "../stechstudio/filament-impersonate"
+        },
+        {
             "name": "symfony/console",
             "version": "v6.2.3",
             "version_normalized": "6.2.3.0",
@@ -10441,83 +10623,6 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "install-path": "../webmozart/assert"
-        },
-        {
-            "name": "z3d0x/filament-logger",
-            "version": "v0.4.2",
-            "version_normalized": "0.4.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Z3d0X/filament-logger.git",
-                "reference": "ddc6691c0ab74c08bb956d7c9c1744a540488e17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Z3d0X/filament-logger/zipball/ddc6691c0ab74c08bb956d7c9c1744a540488e17",
-                "reference": "ddc6691c0ab74c08bb956d7c9c1744a540488e17",
-                "shasum": ""
-            },
-            "require": {
-                "filament/filament": "^2.11",
-                "illuminate/contracts": "^8.0 | ^9.0",
-                "php": "^8.0 | ^8.1",
-                "spatie/laravel-activitylog": "^4.5",
-                "spatie/laravel-package-tools": "^1.13.5"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^6.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^7.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-laravel": "^1.1",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5",
-                "spatie/laravel-ray": "^1.26"
-            },
-            "time": "2022-12-22T09:36:19+00:00",
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Z3d0X\\FilamentLogger\\FilamentLoggerServiceProvider"
-                    ],
-                    "aliases": {
-                        "FilamentLogger": "Z3d0X\\FilamentLogger\\Facades\\FilamentLogger"
-                    }
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Z3d0X\\FilamentLogger\\": "src",
-                    "Z3d0X\\FilamentLogger\\Database\\Factories\\": "database/factories"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ziyaan Hassan",
-                    "email": "ziyaan2010@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Activity logger for filament",
-            "homepage": "https://github.com/z3d0x/filament-logger",
-            "keywords": [
-                "Z3d0X",
-                "filament-logger",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/Z3d0X/filament-logger/issues",
-                "source": "https://github.com/Z3d0X/filament-logger/tree/v0.4.2"
-            },
-            "install-path": "../z3d0x/filament-logger"
         }
     ],
     "dev": true,

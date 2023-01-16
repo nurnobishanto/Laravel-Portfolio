@@ -19,12 +19,12 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'e125f489d647ae664b0af7b573079de7' => __DIR__ . '/..' . '/filament/support/src/helpers.php',
         '29ffe97919493792170d47eb03a68da9' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/helpers.php',
         'b69d5f1f95cd1ed438c038b6cbcc45b5' => __DIR__ . '/..' . '/filament/notifications/src/Testing/Autoload.php',
-        '9261e07cd92c53dcc971c7c88c176c04' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/helpers.php',
-        '9720327d09ed9a4ba00c9b5071b71c7d' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/standards.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '2ad94ea6f6f6013119e9abcf4e302a08' => __DIR__ . '/..' . '/filament/forms/src/helpers.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '9261e07cd92c53dcc971c7c88c176c04' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/helpers.php',
+        '9720327d09ed9a4ba00c9b5071b71c7d' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/standards.php',
+        '2ad94ea6f6f6013119e9abcf4e302a08' => __DIR__ . '/..' . '/filament/forms/src/helpers.php',
         '2c620c99f96a2b964346b45a4d1d1e64' => __DIR__ . '/..' . '/spatie/invade/src/functions.php',
         'eee56a36884c3af04e64bac85043e771' => __DIR__ . '/..' . '/akaunting/laravel-money/src/helpers.php',
         'ebb446bb6d02e998480945fbbb73dc64' => __DIR__ . '/..' . '/filament/filament/src/helpers.php',
@@ -32,17 +32,18 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
+        '507d7a825db0ba8319f9dd335c46057a' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/helpers.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '72b1e3f4a2af9b30b3f137b3ec2057fc' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/helpers.php',
+        '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
+        '72b1e3f4a2af9b30b3f137b3ec2057fc' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/helpers.php',
         '9f8f57c33c574b22450c204c9112dd2d' => __DIR__ . '/..' . '/camya/filament-title-with-slug/src/helpers.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -57,13 +58,9 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         ),
         'i' => 
         array (
+            'io3x1\\FilamentUser\\' => 19,
             'io3x1\\FilamentCommands\\' => 23,
             'io3x1\\FilamentBrowser\\' => 22,
-        ),
-        'Z' => 
-        array (
-            'Z3d0X\\FilamentLogger\\Database\\Factories\\' => 40,
-            'Z3d0X\\FilamentLogger\\' => 21,
         ),
         'W' => 
         array (
@@ -112,6 +109,7 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
             'Spatie\\FlareClient\\' => 19,
             'Spatie\\Backtrace\\' => 17,
             'Spatie\\Activitylog\\' => 19,
+            'STS\\FilamentImpersonate\\' => 24,
         ),
         'R' => 
         array (
@@ -157,6 +155,7 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
+            'Lab404\\Impersonate\\' => 19,
         ),
         'J' => 
         array (
@@ -243,6 +242,10 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
+        'io3x1\\FilamentUser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/3x1io/filament-user/src',
+        ),
         'io3x1\\FilamentCommands\\' => 
         array (
             0 => __DIR__ . '/..' . '/3x1io/filament-commands/src',
@@ -250,14 +253,6 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'io3x1\\FilamentBrowser\\' => 
         array (
             0 => __DIR__ . '/..' . '/3x1io/filament-browser/src',
-        ),
-        'Z3d0X\\FilamentLogger\\Database\\Factories\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/z3d0x/filament-logger/database/factories',
-        ),
-        'Z3d0X\\FilamentLogger\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/z3d0x/filament-logger/src',
         ),
         'Whoops\\' => 
         array (
@@ -415,6 +410,10 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-activitylog/src',
         ),
+        'STS\\FilamentImpersonate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stechstudio/filament-impersonate/src',
+        ),
         'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' => 
         array (
             0 => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/database/factories',
@@ -535,6 +534,10 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'Laravel\\Sail\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
+        ),
+        'Lab404\\Impersonate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lab404/laravel-impersonate/src',
         ),
         'JeffGreco13\\FilamentBreezy\\Database\\Factories\\' => 
         array (
@@ -3682,6 +3685,17 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'JeffGreco13\\FilamentBreezy\\Pages\\MyProfile' => __DIR__ . '/..' . '/jeffgreco13/filament-breezy/src/Pages/MyProfile.php',
         'JeffGreco13\\FilamentBreezy\\Traits\\HasBreezyTwoFactor' => __DIR__ . '/..' . '/jeffgreco13/filament-breezy/src/Traits/HasBreezyTwoFactor.php',
         'JeffGreco13\\FilamentBreezy\\Traits\\TwoFactorAuthenticatable' => __DIR__ . '/..' . '/jeffgreco13/filament-breezy/src/Traits/TwoFactorAuthenticatable.php',
+        'Lab404\\Impersonate\\Controllers\\ImpersonateController' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Controllers/ImpersonateController.php',
+        'Lab404\\Impersonate\\Events\\LeaveImpersonation' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Events/LeaveImpersonation.php',
+        'Lab404\\Impersonate\\Events\\TakeImpersonation' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Events/TakeImpersonation.php',
+        'Lab404\\Impersonate\\Exceptions\\InvalidUserProvider' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Exceptions/InvalidUserProvider.php',
+        'Lab404\\Impersonate\\Exceptions\\MissingUserProvider' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Exceptions/MissingUserProvider.php',
+        'Lab404\\Impersonate\\Guard\\SessionGuard' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Guard/SessionGuard.php',
+        'Lab404\\Impersonate\\Impersonate' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Impersonate.php',
+        'Lab404\\Impersonate\\ImpersonateServiceProvider' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/ImpersonateServiceProvider.php',
+        'Lab404\\Impersonate\\Middleware\\ProtectFromImpersonation' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Middleware/ProtectFromImpersonation.php',
+        'Lab404\\Impersonate\\Models\\Impersonate' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Models/Impersonate.php',
+        'Lab404\\Impersonate\\Services\\ImpersonateManager' => __DIR__ . '/..' . '/lab404/laravel-impersonate/src/Services/ImpersonateManager.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
@@ -5594,6 +5608,9 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
         'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirective' => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src/BladeCaptureDirective.php',
         'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider' => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src/BladeCaptureDirectiveServiceProvider.php',
+        'STS\\FilamentImpersonate\\FilamentImpersonateServiceProvider' => __DIR__ . '/..' . '/stechstudio/filament-impersonate/src/FilamentImpersonateServiceProvider.php',
+        'STS\\FilamentImpersonate\\Impersonate' => __DIR__ . '/..' . '/stechstudio/filament-impersonate/src/Impersonate.php',
+        'STS\\FilamentImpersonate\\Middleware\\ImpersonationBanner' => __DIR__ . '/..' . '/stechstudio/filament-impersonate/src/Middleware/ImpersonationBanner.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -6968,22 +6985,17 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
-        'Z3d0X\\FilamentLogger\\FilamentLoggerEventServiceProvider' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/FilamentLoggerEventServiceProvider.php',
-        'Z3d0X\\FilamentLogger\\FilamentLoggerServiceProvider' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/FilamentLoggerServiceProvider.php',
-        'Z3d0X\\FilamentLogger\\Loggers\\AbstractModelLogger' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Loggers/AbstractModelLogger.php',
-        'Z3d0X\\FilamentLogger\\Loggers\\AccessLogger' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Loggers/AccessLogger.php',
-        'Z3d0X\\FilamentLogger\\Loggers\\ModelLogger' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Loggers/ModelLogger.php',
-        'Z3d0X\\FilamentLogger\\Loggers\\NotificationLogger' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Loggers/NotificationLogger.php',
-        'Z3d0X\\FilamentLogger\\Loggers\\ResourceLogger' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Loggers/ResourceLogger.php',
-        'Z3d0X\\FilamentLogger\\Resources\\ActivityResource' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Resources/ActivityResource.php',
-        'Z3d0X\\FilamentLogger\\Resources\\ActivityResource\\Pages\\ListActivities' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Resources/ActivityResource/Pages/ListActivities.php',
-        'Z3d0X\\FilamentLogger\\Resources\\ActivityResource\\Pages\\ViewActivity' => __DIR__ . '/..' . '/z3d0x/filament-logger/src/Resources/ActivityResource/Pages/ViewActivity.php',
         'io3x1\\FilamentBrowser\\FilamentBrowserProvider' => __DIR__ . '/..' . '/3x1io/filament-browser/src/FilamentBrowserProvider.php',
         'io3x1\\FilamentBrowser\\Http\\Controllers\\BrowserController' => __DIR__ . '/..' . '/3x1io/filament-browser/src/Http/Controllers/BrowserController.php',
         'io3x1\\FilamentBrowser\\Pages\\Browser' => __DIR__ . '/..' . '/3x1io/filament-browser/src/Pages/Browser.php',
         'io3x1\\FilamentCommands\\FilamentCommandsProvider' => __DIR__ . '/..' . '/3x1io/filament-commands/src/FilamentCommandsProvider.php',
         'io3x1\\FilamentCommands\\Http\\Controllers\\GuiController' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Http/Controllers/GuiController.php',
         'io3x1\\FilamentCommands\\Pages\\Artisan' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Pages/Artisan.php',
+        'io3x1\\FilamentUser\\FilamentUserProvider' => __DIR__ . '/..' . '/3x1io/filament-user/src/FilamentUserProvider.php',
+        'io3x1\\FilamentUser\\Resources\\UserResource' => __DIR__ . '/..' . '/3x1io/filament-user/src/Resources/UserResource.php',
+        'io3x1\\FilamentUser\\Resources\\UserResource\\Pages\\CreateUser' => __DIR__ . '/..' . '/3x1io/filament-user/src/Resources/UserResource/Pages/CreateUser.php',
+        'io3x1\\FilamentUser\\Resources\\UserResource\\Pages\\EditUser' => __DIR__ . '/..' . '/3x1io/filament-user/src/Resources/UserResource/Pages/EditUser.php',
+        'io3x1\\FilamentUser\\Resources\\UserResource\\Pages\\ListUsers' => __DIR__ . '/..' . '/3x1io/filament-user/src/Resources/UserResource/Pages/ListUsers.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 
