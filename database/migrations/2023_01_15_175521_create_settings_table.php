@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('key');
             $table->string('display_name');
             $table->text('value')->nullable();
+            $table->text('details')->nullable();
             $table->text('options')->nullable();
             $table->string('type');
             $table->unsignedInteger('order')->default(1);

@@ -54,7 +54,7 @@
                             <label
                                 class="text-sm font-medium leading-4 text-gray-700 dark:text-gray-300 mb-2 flex justify-between items-center">
                                 <div class="flex items-center">
-                                    {{ $item['display_name'] }}
+                                    {{ $item['display_name'] }}  <pre>  setting('{{ $item['key'] }}')  </pre>
                                     <span class="handle">
                                         <x-heroicon-o-selector class="w-5 h-5 cursor-move" />
                                     </span>
@@ -62,9 +62,9 @@
                                 @if(config('filament-dynamic-settings-page.tool.enable'))
                                 <button wire:loading.attr="disabled" wire:loading.class="!bg-primary-200"
                                     wire:target="destroySetting">
-                                    <x-heroicon-o-trash
+                                    {{-- <x-heroicon-o-trash
                                         onclick="return confirm('{{ __('filament-dynamic-settings-page::settings-resource.delete.confirm') }}') ? Livewire.emit('destroySetting',{{ $item['id'] }}) : false"
-                                        class="w-5 h-5 hover:text-danger-500 cursor-pointer" />
+                                        class="w-5 h-5 hover:text-danger-500 cursor-pointer" /> --}}
                                 </button>
                                 @endif
                             </label>
@@ -100,11 +100,19 @@
                     {{ __('filament-dynamic-settings-page::settings-resource.fields.types.default') }}</option>
                 <option value="text">{{ __('filament-dynamic-settings-page::settings-resource.fields.types.text') }}
                 </option>
+                <option value="number">Number</option>
+                <option value="select">Select Dropdown</option>
+                <option value="radio">Select Radio</option>
+               
                 <option value="text_area">
                     {{ __('filament-dynamic-settings-page::settings-resource.fields.types.text_area') }}</option>
                 <option value="image">{{ __('filament-dynamic-settings-page::settings-resource.fields.types.image') }}
                 </option>
             </select>
+           
+            {{-- <textarea wire:model.lazy="newSetting.details"
+                
+                > --}}
             <div @error('newSetting.group') class="has-error" @enderror>
                 <select wire:model.lazy="newSetting.group" id="multiple" class="{{ $inputClass }}">
                     <option value="" selected="selected">
@@ -117,6 +125,7 @@
                     @endif
                 </select>
             </div>
+            <textarea wire:model.lazy="newSetting.details" class="{{ $inputClass }} @error('newSetting.details') !border-danger-500 @enderror" placeholder="Details"></textarea>
         </div>
         <div align="right">
             <button wire:loading.attr="disabled" wire:loading.class="!bg-primary-200" wire:target="saveNewSetting"

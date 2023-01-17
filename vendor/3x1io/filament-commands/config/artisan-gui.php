@@ -75,6 +75,7 @@ return [
     |
     */
     'commands' => [
+        
         'laravel' => [
             'clear-compiled',
             'down',
