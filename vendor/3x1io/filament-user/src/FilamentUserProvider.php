@@ -10,6 +10,8 @@ use Spatie\LaravelPackageTools\Package;
 class FilamentUserProvider extends PluginServiceProvider
 {
     public static string $name = 'filament-user';
+
+   
     
 
     protected array $resources = [

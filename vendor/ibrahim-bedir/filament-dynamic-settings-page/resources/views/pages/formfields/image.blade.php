@@ -3,5 +3,5 @@
     <span class="text-sm font-bold mt-1">{{ __('filament-dynamic-settings-page::settings-resource.preview') }}:</span>
     <img width="300" src="{{ $form[$item['id']]['value']->temporaryUrl() }}">
     @else
-    <img width="300" class="mt-2" src="{{ asset($form[$item['id']]['value']) }}">
+    <img width="300" class="mt-2" src="{{ asset('storage/'.$form[$item['id']]['value']) }}">
 @endif

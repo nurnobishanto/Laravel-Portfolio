@@ -20,7 +20,8 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?int $navigationSort = 9;
+    protected static ?string $navigationGroup = 'Account';
+    protected static ?int $navigationSort = 3;
 
     protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
 
@@ -39,10 +40,7 @@ class UserResource extends Resource
         return trans('filament-user::user.resource.single');
     }
 
-    protected static function getNavigationGroup(): ?string
-    {
-        return config('filament-user.group');
-    }
+    
 
     protected function getTitle(): string
     {

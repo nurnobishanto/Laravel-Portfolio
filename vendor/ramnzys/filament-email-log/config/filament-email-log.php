@@ -4,7 +4,7 @@
 return [
 
     'resource' => [
-        'group' => null,
+        'group' => "Settings",
         'sort' => null,
     ],
 

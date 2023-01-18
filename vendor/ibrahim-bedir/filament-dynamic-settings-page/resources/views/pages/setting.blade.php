@@ -100,7 +100,13 @@
                     {{ __('filament-dynamic-settings-page::settings-resource.fields.types.default') }}</option>
                 <option value="text">{{ __('filament-dynamic-settings-page::settings-resource.fields.types.text') }}
                 </option>
-                <option value="number">Number</option>
+                <option value="number">Select Number</option>
+                <option value="url">Select Url</option>
+                <option value="email">Select Email</option>
+                <option value="phone">Select Phone</option>
+                <option value="date">Select Date</option>
+                <option value="time">Select Time</option>
+                <option value="color">Select Color</option>
                 <option value="select">Select Dropdown</option>
                 <option value="radio">Select Radio</option>
                
