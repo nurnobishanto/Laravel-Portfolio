@@ -16,10 +16,15 @@ return new class extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->nullable()->constrained()->cascadeOnDelete();
-            $table->string('name')->unique();
+            $table->foreignId('user_id')->nullable()->constrained()->cascadeOnDelete();
+            $table->string('title')->unique();
             $table->string('slug')->unique();
             $table->string('featured_image')->nullable();
             $table->longText('body')->nullable();
+            $table->boolean('is_published')->nullable();
+            $table->date('published_date')->nullable();
+            $table->integer('view')->nullable();
+
             $table->timestamps();
         });
     }

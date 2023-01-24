@@ -49,7 +49,6 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/z3d0x/filament-logger" />
       <path value="$PROJECT_DIR$/vendor/league/uri-parser" />
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/vendor/league/config" />
@@ -133,6 +132,26 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/stechstudio/filament-impersonate" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/vendor/awcodes/filament-versions" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/ekremogul/filament-grapesjs" />
+      <path value="$PROJECT_DIR$/vendor/lab404/laravel-impersonate" />
+      <path value="$PROJECT_DIR$/vendor/ibrahim-bedir/filament-dynamic-settings-page" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/3x1io/filament-user" />
+      <path value="$PROJECT_DIR$/vendor/3x1io/filament-browser" />
+      <path value="$PROJECT_DIR$/vendor/3x1io/filament-commands" />
+      <path value="$PROJECT_DIR$/vendor/cms-multi/filament-clear-cache" />
+      <path value="$PROJECT_DIR$/vendor/camya/filament-title-with-slug" />
+      <path value="$PROJECT_DIR$/vendor/filipfonal/filament-log-manager" />
+      <path value="$PROJECT_DIR$/vendor/jeffgreco13/filament-breezy" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
