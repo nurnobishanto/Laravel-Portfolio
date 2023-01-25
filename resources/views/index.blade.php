@@ -77,7 +77,7 @@
                         <li><a href="#service">Service</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li class="download_cv"><a href="{{ asset('front') }}/img/cv/1.jpg" download><span>Download
+                        <li class="download_cv"><a href="{{ setting('my.cvurl') }}" download><span>Download
                                     CV</span></a></li>
                     </ul>
                 </div>
@@ -146,6 +146,7 @@
                                 </div>
                                 <div class="social">
                                     <ul>
+                                        <li><a href="#"><i class="icon-github-1"></i></a></li>
                                         <li><a href="#"><i class="icon-facebook-1"></i></a></li>
                                         <li><a href="#"><i class="icon-twitter-1"></i></a></li>
                                         <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
@@ -156,7 +157,7 @@
                         </div>
                         <div class="avatar">
                             <div class="image">
-                                <img src="{{ asset('storage') }}/{{setting('my.photo.1')}}" alt="ss" />
+                                <img src="{{ asset('storage') }}/{{setting('my.photo.1')}}" alt="{{ setting('my.name') }}" />
                                 <span class="skills illustrator anim_moveBottom"><img class="svg"
                                         src="{{ asset('front') }}/img/svg/skills/illustrator.svg"
                                         alt="" /></span>
@@ -255,7 +256,7 @@
                                     </div>
                                 </div>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -270,7 +271,7 @@
                     <div class="wrapper">
                         <div class="left">
                             <div class="image">
-                                <img src="{{ asset('storage') }}/{{setting('my.photo.2')}}" alt="" />
+                                <img src="{{ asset('storage') }}/{{setting('my.photo.2')}}" alt="{{ setting('my.name') }}" />
                                 <div class="numbers year">
                                     <div class="wrapper">
                                         <h3><span class="dizme_tm_counter" data-from="0" data-to="{{setting('year.succsess')}}"
@@ -517,7 +518,7 @@
                             <div class="dizme_tm_main_title wow fadeInUp" data-wow-duration="1s" data-align="left">
                                 <span>Design is Life</span>
                                 <h3>I Develop Skills Regularly to Keep Me Update</h3>
-                                
+
                             </div>
                             <div class="dodo_progress wow fadeInUp" data-wow-duration="1s">
                                 <div class="progress_inner" data-value="85" data-color="#f75023">
@@ -548,7 +549,7 @@
                             </div>
                         </div>
                         <div class="right">
-                            <img src="{{ asset('storage') }}/{{setting('my.photo.3')}}" alt="" />
+                            <img src="{{ asset('storage') }}/{{setting('my.photo.3')}}" alt="{{ setting('my.name') }}" />
                         </div>
                     </div>
                 </div>
