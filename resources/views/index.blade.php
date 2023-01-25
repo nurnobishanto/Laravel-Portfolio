@@ -31,6 +31,9 @@
     <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
     <!-- /STYLES -->
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908437793326427"
+            crossorigin="anonymous"></script>
+
 </head>
 
 <body class="{{ setting('theme.mode') }}">
@@ -150,7 +153,7 @@
                                         <li><a href="#"><i class="icon-facebook-1"></i></a></li>
                                         <li><a href="#"><i class="icon-twitter-1"></i></a></li>
                                         <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
-                                        <li><a href="#"><i class="icon-behance"></i></a></li>
+
                                     </ul>
                                 </div>
                             </div>
