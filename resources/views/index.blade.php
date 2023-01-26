@@ -222,11 +222,30 @@
                                         </span>
                                     </div>
                                     <div class="title">
-                                        <h3>Pixel Perfect</h3>
+                                        <h3>Skilled Development</h3>
                                     </div>
                                     <div class="text">
-                                        <p>Most common methods for designing websites that work well on desktop is
-                                            responsive and adaptive design.</p>
+                                        <p>I will make any of your projects in a very short time and easy to use. We are ready to create any type of project as per your recommendation.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="list_inner">
+                                    <div class="icon">
+                                        <span>
+                                            <img class="brush"
+                                                 src="{{ asset('front') }}/img/brushes/process/{{ setting('theme.mode') }}/2.png"
+                                                 alt="" />
+                                            <img class="svg"
+                                                 src="{{ asset('front') }}/img/svg/process/{{ setting('theme.mode') }}/brush.svg"
+                                                 alt="" />
+                                        </span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>24/7 Hours Support</h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>In case of any need you will contact with me, I will solve your problem immediately.</p>
                                     </div>
                                 </div>
                             </li>
