@@ -8,12 +8,15 @@ use App\Models\Portfolio;
 use App\Models\PortfolioCategory;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -55,9 +58,8 @@ class PortfolioResource extends Resource
                 TextInput::make('client')
                     ->maxLength(255),
                 DatePicker::make('date'),
-                TextInput::make('details'),
-                Forms\Components\MarkdownEditor::make('details'),
-                Forms\Components\RichEditor::make('image'),
+                RichEditor::make('details'),
+                FileUpload::make('image'),
 
 
             ]);
@@ -67,7 +69,9 @@ class PortfolioResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('category.name'),
                 TextColumn::make('title'),
+                ImageColumn::make('image'),
             ])->defaultSort('created_at','desc')
             ->filters([
                 //
