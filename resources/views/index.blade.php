@@ -350,12 +350,12 @@
                                 @if($portfolio->type =="youtube")
                                     <li class="{{$portfolio->category->name}} grid-item">
                                         <div class="inner">
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
+                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                                  data-category="{{$portfolio->category->name}}">
                                                 <a class="popup-youtube" href="{{$portfolio->url}}">
-                                                    <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
+                                                    <img src="{{ asset($portfolio->image) }}" alt="" />
                                                     <div class="main"
-                                                         data-img-url="{{ asset('front') }}/img/portfolio/1.jpg"></div>
+                                                         data-img-url="{{ asset($portfolio->image) }}"></div>
                                                 </a>
                                             </div>
                                             <div class="mobile_title">
@@ -424,7 +424,7 @@
                                             <a class="portfolio_popup" href="#">
                                                 <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
                                                 <div class="main"
-                                                     data-img-url="{{ asset('front') }}/img/portfolio/6.jpg"></div>
+                                                     data-img-url="{{ asset($portfolio->image) }}"></div>
                                             </a>
                                         </div>
                                         <div class="mobile_title">
