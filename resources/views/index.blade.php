@@ -958,8 +958,8 @@
                                         <img src="{{ asset('storage/'.$blog->featured_image) }}" alt="{{$blog->title}}" />
                                         <div class="main" data-img-url="{{ asset('storage/'.$blog->featured_image) }}"></div>
                                         <div class="date">
-                                            <h3>23</h3>
-                                            <span>{{$blog->date}}</span>
+                                            <h3>{{$blog->created_at->format('d')}}</h3>
+                                            <span>{{$blog->created_at->format('M')}}</span>
                                         </div>
                                         <a class="dizme_tm_full_link" href="#"></a>
                                     </div>
