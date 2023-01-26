@@ -64,7 +64,7 @@ class SkillResource extends Resource
             ->actions([
 
                 EditAction::make(),
-                DeleteAction::make(),
+
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
