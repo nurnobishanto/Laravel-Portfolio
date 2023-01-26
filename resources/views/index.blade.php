@@ -350,7 +350,7 @@
                                     <li class="youtube grid-item">
                                         <div class="inner">
                                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
-                                                 data-category="{{$portfolio->category}}">
+                                                 data-category="{{$portfolio->category->name}}">
                                                 <a class="popup-youtube" href="{{$portfolio->url}}">
                                                     <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
                                                     <div class="main"
@@ -359,7 +359,7 @@
                                             </div>
                                             <div class="mobile_title">
                                                 <h3>{{$portfolio->title}}</h3>
-                                                <span>{{$portfolio->category}}</span>
+                                                <span>{{$portfolio->category->name}}</span>
                                             </div>
                                         </div>
                                     </li>
@@ -367,7 +367,7 @@
                                 <li class="vimeo grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle"
-                                             data-category="{{$portfolio->category}}">
+                                             data-category="{{$portfolio->category->name}}">
                                             <a class="popup-vimeo" href="{{$portfolio->url}}">
                                                 <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
                                                 <div class="main"
@@ -376,7 +376,7 @@
                                         </div>
                                         <div class="mobile_title">
                                             <h3>{{$portfolio->title}}</h3>
-                                            <span>{{$portfolio->category}}</span>
+                                            <span>{{$portfolio->category->name}}</span>
                                         </div>
                                     </div>
                                 </li>
@@ -384,7 +384,7 @@
                                 <li class="soundcloud grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art"
-                                             data-category="{{$portfolio->category}}">
+                                             data-category="{{$portfolio->category->name}}">
                                             <a class="soundcloude_link mfp-iframe audio"
                                                href="{{$portfolio->url}}">
                                                 <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
@@ -394,7 +394,7 @@
                                         </div>
                                         <div class="mobile_title">
                                             <h3>{{$portfolio->title}}</h3>
-                                            <span>{{$portfolio->category}}</span>
+                                            <span>{{$portfolio->category->name}}</span>
                                         </div>
                                     </div>
                                 </li>
@@ -402,7 +402,7 @@
                                 <li class="popup grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix"
-                                             data-category="{{$portfolio->category}}">
+                                             data-category="{{$portfolio->category->name}}">
                                             <a class="zoom" href="{{ asset('front') }}/img/portfolio/5.jpg">
                                                 <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
                                                 <div class="main"
@@ -411,7 +411,7 @@
                                         </div>
                                         <div class="mobile_title">
                                             <h3>{{$portfolio->title}}</h3>
-                                            <span>{{$portfolio->category}}</span>
+                                            <span>{{$portfolio->category->name}}</span>
                                         </div>
                                     </div>
                                 </li>
@@ -419,7 +419,7 @@
                                 <li class="detail grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution"
-                                             data-category="{{$portfolio->category}}">
+                                             data-category="{{$portfolio->category->name}}">
                                             <a class="portfolio_popup" href="#">
                                                 <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
                                                 <div class="main"
@@ -428,7 +428,7 @@
                                         </div>
                                         <div class="mobile_title">
                                             <h3>{{$portfolio->title}}</h3>
-                                            <span>{{$portfolio->category}}</span>
+                                            <span>{{$portfolio->category->name}}</span>
                                         </div>
 
                                         <div class="hidden_content">
@@ -445,7 +445,7 @@
                                                             </li>
                                                             <li>
                                                                 <span class="first">Category</span>
-                                                                <span><a href="#">{{$portfolio->category}}</a></span>
+                                                                <span><a href="#">{{$portfolio->category->name}}</a></span>
                                                             </li>
                                                             <li>
                                                                 <span class="first">Date</span>
