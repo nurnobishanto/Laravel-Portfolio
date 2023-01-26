@@ -62,7 +62,7 @@ class SkillResource extends Resource
                 //
             ])
             ->actions([
-                ViewAction::make(),
+
                 EditAction::make(),
                 DeleteAction::make(),
             ])
