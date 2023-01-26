@@ -404,7 +404,7 @@
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                              data-category="{{$portfolio->category->name}}">
-                                            <a class="zoom" href="{{ asset('front') }}/img/portfolio/5.jpg">
+                                            <a class="zoom" href="{{ asset('storage/'.$portfolio->image) }}">
                                                 <img src="{{ asset('storage/'.$portfolio->image) }}" alt="{{$portfolio->title}}" />
                                                 <div class="main"
                                                      data-img-url="{{ asset('storage/'.$portfolio->image) }}"></div>
