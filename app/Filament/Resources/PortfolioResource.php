@@ -7,6 +7,7 @@ use App\Filament\Resources\PortfolioResource\RelationManagers;
 use App\Models\Portfolio;
 use App\Models\PortfolioCategory;
 use Filament\Forms;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
@@ -40,8 +41,25 @@ class PortfolioResource extends Resource
                     ->options(function () {
                         return PortfolioCategory::all()->pluck('name', 'id');
                     })->required(),
+                Select::make('type')
+                    ->options([
+                        'youtube' => 'Youtube',
+                        'vimeo' => 'Vimeo',
+                        'soundcloud' => 'Soundcloud',
+                        'popup' => 'Popup',
+                        'details' => 'Details',
+                    ]),
                 TextInput::make('title')
                     ->required()->maxLength(255),
+                TextInput::make('url')->nullable()->isUrl(),
+                TextInput::make('client')
+                    ->maxLength(255),
+                DatePicker::make('date'),
+                TextInput::make('details'),
+                Forms\Components\MarkdownEditor::make('details'),
+                Forms\Components\RichEditor::make('image'),
+
+
             ]);
     }
 

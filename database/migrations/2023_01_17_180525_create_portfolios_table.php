@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('client')->nullable();
             $table->string('date')->nullable();
             $table->longText('details')->nullable();
-            $table->longText('images')->nullable();
+            $table->longText('image')->nullable();
             $table->timestamps();
         });
     }

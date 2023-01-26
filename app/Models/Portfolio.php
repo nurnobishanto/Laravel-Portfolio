@@ -16,7 +16,7 @@ class Portfolio extends Model
         'client',
         'date',
         'details',
-        'images',
+        'image',
     ];
 
     public function category(){
