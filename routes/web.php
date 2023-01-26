@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Blog;
 use App\Models\Portfolio;
 use App\Models\PortfolioCategory;
 use App\Models\Skill;
