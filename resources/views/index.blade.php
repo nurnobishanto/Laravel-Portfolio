@@ -337,11 +337,9 @@
                     <div class="portfolio_filter">
                         <ul>
                             <li><a href="#" class="current" data-filter="*">All</a></li>
-                            <li><a href="#" data-filter=".youtube">Youtube</a></li>
-                            <li><a href="#" data-filter=".vimeo">Vimeo</a></li>
-                            <li><a href="#" data-filter=".soundcloud">Soundcloud</a></li>
-                            <li><a href="#" data-filter=".popup">Popup</a></li>
-                            <li><a href="#" data-filter=".detail">Detail</a></li>
+                            @foreach($p_cats as $cat)
+                                <li><a href="#" data-filter=".{{$cat->name}}">{{$cat->name}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                     <div class="dizme_tm_portfolio_titles"></div>
