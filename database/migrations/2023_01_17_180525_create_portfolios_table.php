@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->foreignId('portfolio_category_id')->nullable()->constrained()->cascadeOnDelete();
+            $table->string('type')->nullable();
             $table->string('title')->nullable();
             $table->string('url')->nullable();
             $table->string('client')->nullable();

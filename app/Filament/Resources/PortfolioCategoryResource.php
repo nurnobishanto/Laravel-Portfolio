@@ -37,12 +37,11 @@ class PortfolioCategoryResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')
-                    ->reactive()
+                    ->reactive()->required()
                     ->afterStateUpdated(function (Closure $set, $state) {
                         $set('slug', Str::slug($state));
                     }),
-                TextInput::make('slug'),
-
+                TextInput::make('slug')->required()->unique(ignorable: fn ($record) => $record),
 
             ]);
     }
