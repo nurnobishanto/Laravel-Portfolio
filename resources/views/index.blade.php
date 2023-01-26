@@ -348,10 +348,10 @@
                             @foreach($portfolios as $portfolio)
 
                                 @if($portfolio->type =="youtube")
-                                    <li class="youtube grid-item">
+                                    <li class="{{$portfolio->category->name}} grid-item">
                                         <div class="inner">
                                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
-                                                 data-category="{{$portfolio->portfolio_category->name}}">
+                                                 data-category="{{$portfolio->category->name}}">
                                                 <a class="popup-youtube" href="{{$portfolio->url}}">
                                                     <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
                                                     <div class="main"
@@ -360,12 +360,12 @@
                                             </div>
                                             <div class="mobile_title">
                                                 <h3>{{$portfolio->title}}</h3>
-                                                <span>{{$portfolio->portfolio_category->name}}</span>
+                                                <span>{{$portfolio->category->name}}</span>
                                             </div>
                                         </div>
                                     </li>
                                 @elseif($portfolio->type =="vimeo")
-                                <li class="vimeo grid-item">
+                                <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle"
                                              data-category="{{$portfolio->category->name}}">
@@ -382,7 +382,7 @@
                                     </div>
                                 </li>
                                 @elseif($portfolio->type =="soundcloud")
-                                <li class="soundcloud grid-item">
+                                <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art"
                                              data-category="{{$portfolio->category->name}}">
@@ -400,7 +400,7 @@
                                     </div>
                                 </li>
                                 @elseif($portfolio->type =="popup")
-                                <li class="popup grid-item">
+                                <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix"
                                              data-category="{{$portfolio->category->name}}">
@@ -417,7 +417,7 @@
                                     </div>
                                 </li>
                                 @else
-                                <li class="detail grid-item">
+                                <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
                                         <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution"
                                              data-category="{{$portfolio->category->name}}">
