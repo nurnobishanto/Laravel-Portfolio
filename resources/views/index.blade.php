@@ -951,127 +951,35 @@
                     </div>
                     <div class="news_list">
                         <ul>
-                            <li class="wow fadeInUp" data-wow-duration="1s">
-                                <div class="list_inner">
-                                    <div class="image">
-                                        <img src="{{ asset('front') }}/img/thumbs/42-29.jpg" alt="" />
-                                        <div class="main" data-img-url="{{ asset('front') }}/img/news/1.jpg"></div>
-                                        <div class="date">
-                                            <h3>23</h3>
-                                            <span>Dec</span>
-                                        </div>
-                                        <a class="dizme_tm_full_link" href="#"></a>
-                                    </div>
-                                    <div class="details">
-                                        <span class="category"><a href="#">Web Development</a></span>
-                                        <h3 class="title"><a href="#">Jim Morisson Says when the musics over
-                                                turn off the light</a></h3>
-                                    </div>
-
-                                    <div class="news_hidden_details">
-                                        <div class="news_popup_informations">
-                                            <div class="text">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
+                            @foreach($blogs as $blog)
                             <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                                 <div class="list_inner">
                                     <div class="image">
-                                        <img src="{{ asset('front') }}/img/thumbs/42-29.jpg" alt="" />
-                                        <div class="main" data-img-url="{{ asset('front') }}/img/news/2.jpg"></div>
+                                        <img src="{{ asset('storage/'.$blog->featured_image) }}" alt="{{$blog->title}}" />
+                                        <div class="main" data-img-url="{{ asset('storage/'.$blog->featured_image) }}"></div>
                                         <div class="date">
                                             <h3>23</h3>
-                                            <span>Dec</span>
+                                            <span>{{$blog->date}}</span>
                                         </div>
                                         <a class="dizme_tm_full_link" href="#"></a>
                                     </div>
                                     <div class="details">
-                                        <span class="category"><a href="#">Branding</a></span>
-                                        <h3 class="title"><a href="#">How to be appreciated for your hard work
-                                                as a developer</a></h3>
+                                        <span class="category"><a href="#">{{$blog->category->name}}</a></span>
+                                        <h3 class="title"><a href="#">{{$blog->title}}</a></h3>
                                     </div>
 
                                     <div class="news_hidden_details">
                                         <div class="news_popup_informations">
                                             <div class="text">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
+                                               {!! $blog->body !!}
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </li>
-                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="list_inner">
-                                    <div class="image">
-                                        <img src="{{ asset('front') }}/img/thumbs/42-29.jpg" alt="" />
-                                        <div class="main" data-img-url="{{ asset('front') }}/img/news/3.jpg">
-                                        </div>
-                                        <div class="date">
-                                            <h3>23</h3>
-                                            <span>Dec</span>
-                                        </div>
-                                        <a class="dizme_tm_full_link" href="#"></a>
-                                    </div>
-                                    <div class="details">
-                                        <span class="category"><a href="#">Social Media</a></span>
-                                        <h3 class="title"><a href="#">How designers and developers can
-                                                collaborate better</a></h3>
-                                    </div>
+                            @endforeach
 
-                                    <div class="news_hidden_details">
-                                        <div class="news_popup_informations">
-                                            <div class="text">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>

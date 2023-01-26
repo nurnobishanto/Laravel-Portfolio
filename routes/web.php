@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $blogs = Blog::orderBy('created_at','desc')->take(3)->get();
     $skills = Skill::all()->random(5);
     $p_cats = PortfolioCategory::all();
     $portfolios = Portfolio::all();
-    return view('index',compact(['skills','p_cats','portfolios']));
+    return view('index',compact(['skills','p_cats','portfolios','blogs']));
 });
