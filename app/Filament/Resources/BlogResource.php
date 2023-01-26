@@ -41,16 +41,17 @@ class BlogResource extends Resource
     {
         return $form
             ->schema([
-                Select::make('category_id')
+                Select::make('category_id')->label('Select Category')
                     ->options(function () {
                         return Category::all()->pluck('name', 'id');
                     })->required(),
-                TextInput::make('name')
+                TextInput::make('title')->placeholder('Enter your blog title')
                     ->reactive()->required()
                     ->afterStateUpdated(function (Closure $set, $state) {
                         $set('slug', Str::slug($state));
                     }),
-                TextInput::make('slug')->required()->unique(ignorable: fn ($record) => $record),
+                TextInput::make('slug')->required()->placeholder('Enter your slug')
+                    ->unique(ignorable: fn ($record) => $record),
                 FileUpload::make('featured_image'),
                 RichEditor::make('body'),
             ]);
