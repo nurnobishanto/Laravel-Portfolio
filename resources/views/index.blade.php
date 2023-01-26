@@ -149,11 +149,24 @@
                                 </div>
                                 <div class="social">
                                     <ul>
-                                        <li><a href="#"><i class="icon-github-1"></i></a></li>
-                                        <li><a href="#"><i class="icon-facebook-1"></i></a></li>
-                                        <li><a href="#"><i class="icon-twitter-1"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
-
+                                        @if(setting('my.github'))
+                                            <li><a href="#"><i class="icon-github-3"></i></a></li>
+                                        @endif
+                                        @if(setting('my.linkedin'))
+                                            <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+                                        @endif
+                                        @if(setting('my.facebook'))
+                                            <li><a href="#"><i class="icon-facebook-1"></i></a></li>
+                                        @endif
+                                        @if(setting('my.twitter'))
+                                            <li><a href="#"><i class="icon-twitter-1"></i></a></li>
+                                        @endif
+                                        @if(setting('my.youtube'))
+                                            <li><a href="#"><i class="icon-youtube-1"></i></a></li>
+                                        @endif
+                                        @if(setting('my.instagram'))
+                                            <li><a href="#"><i class="icon-instagram-1"></i></a></li>
+                                        @endif
                                     </ul>
                                 </div>
                             </div>
