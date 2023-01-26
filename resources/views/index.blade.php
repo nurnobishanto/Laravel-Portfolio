@@ -353,9 +353,9 @@
                                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                                  data-category="{{$portfolio->category->name}}">
                                                 <a class="popup-youtube" href="{{$portfolio->url}}">
-                                                    <img src="{{ asset($portfolio->image) }}" alt="" />
+                                                    <img src="{{ asset('storage/'.$portfolio->image) }}" alt="{{$portfolio->title}}" />
                                                     <div class="main"
-                                                         data-img-url="{{ asset($portfolio->image) }}"></div>
+                                                         data-img-url="{{ asset('storage/'.$portfolio->image) }}"></div>
                                                 </a>
                                             </div>
                                             <div class="mobile_title">
