@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Portfolio;
 use App\Models\PortfolioCategory;
 use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
@@ -18,5 +19,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $skills = Skill::all()->random(5);
     $p_cats = PortfolioCategory::all();
-    return view('index',compact(['skills','p_cats']));
+    $portfolios = Portfolio::all();
+    return view('index',compact(['skills','p_cats','portfolios']));
 });

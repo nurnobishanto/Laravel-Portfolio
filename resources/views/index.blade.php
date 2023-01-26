@@ -345,173 +345,160 @@
                     <div class="dizme_tm_portfolio_titles"></div>
                     <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul class="gallery_zoom grid">
-                            <li class="youtube grid-item">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
-                                        data-category="Youtube">
-                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=7e90gBu4pas">
-                                            <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/portfolio/1.jpg"></div>
-                                        </a>
+                            @foreach($portfolios as $portfolio)
+                                @if($portfolio->type =="youtube")
+                                    <li class="youtube grid-item">
+                                        <div class="inner">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
+                                                 data-category="{{$portfolio->category}}">
+                                                <a class="popup-youtube" href="{{$portfolio->url}}">
+                                                    <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
+                                                    <div class="main"
+                                                         data-img-url="{{ asset('front') }}/img/portfolio/1.jpg"></div>
+                                                </a>
+                                            </div>
+                                            <div class="mobile_title">
+                                                <h3>{{$portfolio->title}}</h3>
+                                                <span>{{$portfolio->category}}</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @elseif($portfolio->type =="vimeo")
+                                <li class="vimeo grid-item">
+                                    <div class="inner">
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle"
+                                             data-category="{{$portfolio->category}}">
+                                            <a class="popup-vimeo" href="{{$portfolio->url}}">
+                                                <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
+                                                <div class="main"
+                                                     data-img-url="{{ asset('front') }}/img/portfolio/2.jpg"></div>
+                                            </a>
+                                        </div>
+                                        <div class="mobile_title">
+                                            <h3>{{$portfolio->title}}</h3>
+                                            <span>{{$portfolio->category}}</span>
+                                        </div>
                                     </div>
-                                    <div class="mobile_title">
-                                        <h3>Mockup Shape</h3>
-                                        <span>Youtube</span>
+                                </li>
+                                @elseif($portfolio->type =="soundcloud")
+                                <li class="soundcloud grid-item">
+                                    <div class="inner">
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art"
+                                             data-category="{{$portfolio->category}}">
+                                            <a class="soundcloude_link mfp-iframe audio"
+                                               href="{{$portfolio->url}}">
+                                                <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
+                                                <div class="main"
+                                                     data-img-url="{{ asset('front') }}/img/portfolio/3.jpg"></div>
+                                            </a>
+                                        </div>
+                                        <div class="mobile_title">
+                                            <h3>{{$portfolio->title}}</h3>
+                                            <span>{{$portfolio->category}}</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="vimeo grid-item">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle"
-                                        data-category="Vimeo">
-                                        <a class="popup-vimeo" href="https://vimeo.com/337293658">
-                                            <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/portfolio/2.jpg"></div>
-                                        </a>
+                                </li>
+                                @elseif($portfolio->type =="popup")
+                                <li class="popup grid-item">
+                                    <div class="inner">
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix"
+                                             data-category="{{$portfolio->category}}">
+                                            <a class="zoom" href="{{ asset('front') }}/img/portfolio/5.jpg">
+                                                <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
+                                                <div class="main"
+                                                     data-img-url="{{ asset('front') }}/img/portfolio/5.jpg"></div>
+                                            </a>
+                                        </div>
+                                        <div class="mobile_title">
+                                            <h3>{{$portfolio->title}}</h3>
+                                            <span>{{$portfolio->category}}</span>
+                                        </div>
                                     </div>
-                                    <div class="mobile_title">
-                                        <h3>Ave Bottle</h3>
-                                        <span>Vimeo</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="soundcloud grid-item">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art"
-                                        data-category="Soundcloud">
-                                        <a class="soundcloude_link mfp-iframe audio"
-                                            href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                                            <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/portfolio/3.jpg"></div>
-                                        </a>
-                                    </div>
-                                    <div class="mobile_title">
-                                        <h3>Magic Art</h3>
-                                        <span>Soundcloud</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="popup grid-item">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix"
-                                        data-category="Popup">
-                                        <a class="zoom" href="{{ asset('front') }}/img/portfolio/5.jpg">
-                                            <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/portfolio/5.jpg"></div>
-                                        </a>
-                                    </div>
-                                    <div class="mobile_title">
-                                        <h3>Blue Lemon</h3>
-                                        <span>Popup</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="popup grid-item">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Art Stone"
-                                        data-category="Popup">
-                                        <a class="zoom" href="{{ asset('front') }}/img/portfolio/4.jpg">
-                                            <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/portfolio/4.jpg"></div>
-                                        </a>
-                                    </div>
-                                    <div class="mobile_title">
-                                        <h3>Art Stone</h3>
-                                        <span>Popup</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="detail grid-item">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution"
-                                        data-category="Detail">
-                                        <a class="portfolio_popup" href="#">
-                                            <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/portfolio/6.jpg"></div>
-                                        </a>
-                                    </div>
-                                    <div class="mobile_title">
-                                        <h3>Global Evolution</h3>
-                                        <span>Detail</span>
-                                    </div>
+                                </li>
+                                @else
+                                <li class="detail grid-item">
+                                    <div class="inner">
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution"
+                                             data-category="{{$portfolio->category}}">
+                                            <a class="portfolio_popup" href="#">
+                                                <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
+                                                <div class="main"
+                                                     data-img-url="{{ asset('front') }}/img/portfolio/6.jpg"></div>
+                                            </a>
+                                        </div>
+                                        <div class="mobile_title">
+                                            <h3>{{$portfolio->title}}</h3>
+                                            <span>{{$portfolio->category}}</span>
+                                        </div>
 
-                                    <div class="hidden_content">
-                                        <div class="popup_details">
-                                            <div class="main_details">
-                                                <div class="textbox">
-                                                    <p>We live in a world where we need to move quickly and iterate on
-                                                        our ideas as flexibly as possible.</p>
-                                                    <p>Mockups are useful both for the creative phase of the project -
-                                                        for instance when you're trying to figure out your user flows or
-                                                        the proper visual hierarchy - and the production phase when they
-                                                        phase when they will represent the target product. Building
-                                                        mockups strikes the ideal balance ease of modification.</p>
+                                        <div class="hidden_content">
+                                            <div class="popup_details">
+                                                <div class="main_details">
+                                                    <div class="textbox">
+                                                        {{$portfolio->details}}
+                                                    </div>
+                                                    <div class="detailbox">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="first">Client</span>
+                                                                <span>{{$portfolio->client}}</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Category</span>
+                                                                <span><a href="#">{{$portfolio->category}}</a></span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Date</span>
+                                                                <span>{{$portfolio->date}}</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <div class="detailbox">
+                                                <div class="additional_images">
                                                     <ul>
                                                         <li>
-                                                            <span class="first">Client</span>
-                                                            <span>Alvaro Morata</span>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
+                                                                         alt="" />
+                                                                    <div class="main"
+                                                                         data-img-url="{{ asset('front') }}/img/portfolio/1.jpg">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                         <li>
-                                                            <span class="first">Category</span>
-                                                            <span><a href="#">Detail</a></span>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
+                                                                         alt="" />
+                                                                    <div class="main"
+                                                                         data-img-url="{{ asset('front') }}/img/portfolio/2.jpg">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                         <li>
-                                                            <span class="first">Date</span>
-                                                            <span>March 07, 2021</span>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
+                                                                         alt="" />
+                                                                    <div class="main"
+                                                                         data-img-url="{{ asset('front') }}/img/portfolio/3.jpg">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="additional_images">
-                                                <ul>
-                                                    <li>
-                                                        <div class="list_inner">
-                                                            <div class="my_image">
-                                                                <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
-                                                                    alt="" />
-                                                                <div class="main"
-                                                                    data-img-url="{{ asset('front') }}/img/portfolio/1.jpg">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="list_inner">
-                                                            <div class="my_image">
-                                                                <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
-                                                                    alt="" />
-                                                                <div class="main"
-                                                                    data-img-url="{{ asset('front') }}/img/portfolio/2.jpg">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="list_inner">
-                                                            <div class="my_image">
-                                                                <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
-                                                                    alt="" />
-                                                                <div class="main"
-                                                                    data-img-url="{{ asset('front') }}/img/portfolio/3.jpg">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
-                                    </div>
 
-                                </div>
-                            </li>
+                                    </div>
+                                </li>
+                                @endif
+                            @endforeach
+
                         </ul>
                     </div>
                 </div>
