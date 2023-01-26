@@ -69,7 +69,7 @@ class PortfolioResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('category.name'),
+
                 TextColumn::make('title'),
                 ImageColumn::make('image'),
             ])->defaultSort('created_at','desc')
