@@ -456,20 +456,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="additional_images">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="list_inner">
-                                                                <div class="my_image">
-                                                                    <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
-                                                                         alt="" />
-                                                                    <div class="main"
-                                                                         data-img-url="{{ asset('front') }}/img/portfolio/1.jpg">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                    </ul>
+                                                    <embed src="{{$portfolio->url}}" width="100%" height="350px">
                                                 </div>
                                             </div>
                                         </div>
