@@ -5,14 +5,21 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PageResource\Pages;
 use App\Filament\Resources\PageResource\RelationManagers;
 use App\Models\Page;
+use Closure;
+use Ekremogul\FilamentGrapesjs\Forms\Components\GrapesJs;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
+use Illuminate\Support\Str;
 
 
 class PageResource extends Resource
@@ -24,9 +31,9 @@ class PageResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
     protected static ?string $activeNavigationIcon = 'heroicon-s-document-text';
-    
+
     protected static ?string $navigationLabel = 'Pages';
-    
+
     protected static ?int $navigationSort = 3;
 
     protected static function getNavigationBadge(): ?string
@@ -42,25 +49,14 @@ class PageResource extends Resource
     {
         return $form
             ->schema([
-                TitleWithSlugInput::make(
-                    fieldTitle: 'name', 
-                    fieldSlug: 'slug', 
-                    urlPath: '/',
-                    urlVisitLinkLabel: 'Visit Book',
-                    titleLabel: 'Title',
-                    titlePlaceholder: 'Insert the title...',
-                    slugLabel: 'Link:',
-                ),
-                // Forms\Components\TextInput::make('name')
-                //     ->required()
-                //     ->maxLength(255),
-                // Forms\Components\TextInput::make('slug')
-                //     ->required()
-                //     ->maxLength(255),
-                Forms\Components\TextInput::make('featured_image')
-                    ->maxLength(255),
-              
-                \Ekremogul\FilamentGrapesjs\Forms\Components\GrapesJs::make('body'),
+                TextInput::make('name')
+                    ->reactive()->required()
+                    ->afterStateUpdated(function (Closure $set, $state) {
+                        $set('slug', Str::slug($state));
+                    }),
+                TextInput::make('slug')->required()->unique(ignorable: fn ($record) => $record),
+                FileUpload::make('featured_image'),
+                GrapesJs::make('body'),
             ]);
     }
 
@@ -68,15 +64,10 @@ class PageResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('slug'),
-                Tables\Columns\TextColumn::make('featured_image'),
-                Tables\Columns\TextColumn::make('body'),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
-            ])
+                TextColumn::make('name'),
+                TextColumn::make('slug'),
+                ImageColumn::make('featured_image'),
+            ])->defaultSort('created_at','desc')
             ->filters([
                 //
             ])
@@ -87,14 +78,14 @@ class PageResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -102,5 +93,5 @@ class PageResource extends Resource
             'create' => Pages\CreatePage::route('/create'),
             'edit' => Pages\EditPage::route('/{record}/edit'),
         ];
-    }    
+    }
 }
