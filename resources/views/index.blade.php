@@ -270,6 +270,26 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="list_inner">
+                                    <div class="icon">
+                                        <span>
+                                            <img class="brush"
+                                                 src="{{ asset('front') }}/img/brushes/process/{{ setting('theme.mode') }}/2.png"
+                                                 alt="" />
+                                            <img class="svg"
+                                                 src="{{ asset('front') }}/img/svg/process/{{ setting('theme.mode') }}/brush.svg"
+                                                 alt="" />
+                                        </span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Client Satisfaction </h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>I always try to provide good quality services to our customers at friendly price. I always maintain the quality of service. I am responsible for providing maximum service. </p>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                                 <div class="list_inner">
                                     <div class="icon">
