@@ -367,12 +367,12 @@
                                 @elseif($portfolio->type =="vimeo")
                                 <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
-                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle"
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                              data-category="{{$portfolio->category->name}}">
                                             <a class="popup-vimeo" href="{{$portfolio->url}}">
-                                                <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
+                                                <img src="{{ asset('storage/'.$portfolio->image) }}" alt="{{$portfolio->title}}" />
                                                 <div class="main"
-                                                     data-img-url="{{ asset('front') }}/img/portfolio/2.jpg"></div>
+                                                     data-img-url="{{ asset('storage/'.$portfolio->image) }}"></div>
                                             </a>
                                         </div>
                                         <div class="mobile_title">
@@ -384,13 +384,13 @@
                                 @elseif($portfolio->type =="soundcloud")
                                 <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
-                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art"
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                              data-category="{{$portfolio->category->name}}">
                                             <a class="soundcloude_link mfp-iframe audio"
                                                href="{{$portfolio->url}}">
-                                                <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
+                                                <img src="{{ asset('storage/'.$portfolio->image) }}" alt="{{$portfolio->title}}" />
                                                 <div class="main"
-                                                     data-img-url="{{ asset('front') }}/img/portfolio/3.jpg"></div>
+                                                     data-img-url="{{ asset('storage/'.$portfolio->image) }}"></div>
                                             </a>
                                         </div>
                                         <div class="mobile_title">
@@ -402,12 +402,12 @@
                                 @elseif($portfolio->type =="popup")
                                 <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
-                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix"
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                              data-category="{{$portfolio->category->name}}">
                                             <a class="zoom" href="{{ asset('front') }}/img/portfolio/5.jpg">
-                                                <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
+                                                <img src="{{ asset('storage/'.$portfolio->image) }}" alt="{{$portfolio->title}}" />
                                                 <div class="main"
-                                                     data-img-url="{{ asset('front') }}/img/portfolio/5.jpg"></div>
+                                                     data-img-url="{{ asset('storage/'.$portfolio->image) }}"></div>
                                             </a>
                                         </div>
                                         <div class="mobile_title">
@@ -419,12 +419,12 @@
                                 @else
                                 <li class="{{$portfolio->category->name}} grid-item">
                                     <div class="inner">
-                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution"
+                                        <div class="entry dizme_tm_portfolio_animation_wrap" data-title="{{$portfolio->title}}"
                                              data-category="{{$portfolio->category->name}}">
                                             <a class="portfolio_popup" href="#">
-                                                <img src="{{ asset('front') }}/img/thumbs/42-34.jpg" alt="" />
+                                                <img src="{{ asset('storage/'.$portfolio->image) }}" alt="{{$portfolio->title}}" />
                                                 <div class="main"
-                                                     data-img-url="{{ asset($portfolio->image) }}"></div>
+                                                     data-img-url="{{ asset('storage/'.$portfolio->image) }}"></div>
                                             </a>
                                         </div>
                                         <div class="mobile_title">
