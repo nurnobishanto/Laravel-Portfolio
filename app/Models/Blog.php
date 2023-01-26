@@ -16,4 +16,8 @@ class Blog extends Model
         'featured_image',
         'body',
     ];
+
+    public function category(){
+       return $this->belongsTo(Category::class);
+    }
 }
