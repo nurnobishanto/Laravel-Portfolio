@@ -445,7 +445,7 @@
                                                             </li>
                                                             <li>
                                                                 <span class="first">Category</span>
-                                                                <span><a href="#">{{$portfolio->category->name}}</a></span>
+                                                                <span><a href="#"></a></span>
                                                             </li>
                                                             <li>
                                                                 <span class="first">Date</span>
