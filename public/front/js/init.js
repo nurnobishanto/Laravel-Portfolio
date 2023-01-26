@@ -162,7 +162,7 @@ function dizme_tm_modalbox_news(){
 		var title	 	= parent.find('.details .title a').text();
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
+		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="'+image+'" alt="'+title+'" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.news_popup_informations .image').after('<div class="details"><h3>'+title+'</h3><span>'+category+'</span><div>');
 		dizme_tm_data_images();
 		return false;
@@ -195,7 +195,7 @@ function dizme_tm_modalbox_portfolio(){
 		var title	 	= parent.find('.entry').data('title');
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
+		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="'+image+'" alt="'+title+'" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a href="#">'+category+'</a></span><div>');
 		dizme_tm_data_images();
 		return false;
