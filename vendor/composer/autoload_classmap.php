@@ -77,6 +77,7 @@ return array(
     'App\\Models\\Page' => $baseDir . '/app/Models/Page.php',
     'App\\Models\\Portfolio' => $baseDir . '/app/Models/Portfolio.php',
     'App\\Models\\PortfolioCategory' => $baseDir . '/app/Models/PortfolioCategory.php',
+    'App\\Models\\Service' => $baseDir . '/app/Models/Service.php',
     'App\\Models\\Skill' => $baseDir . '/app/Models/Skill.php',
     'App\\Models\\Testimonial' => $baseDir . '/app/Models/Testimonial.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
