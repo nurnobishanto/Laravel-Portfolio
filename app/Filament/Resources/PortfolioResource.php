@@ -27,7 +27,7 @@ class PortfolioResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
-    protected static ?string $navigationGroup = 'Others';
+    protected static ?string $navigationGroup = 'Portfolio';
 
     protected static ?int $navigationSort = 4;
 

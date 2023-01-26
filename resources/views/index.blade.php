@@ -283,6 +283,27 @@
                                         </span>
                                     </div>
                                     <div class="title">
+                                        <h3>High Quality</h3>
+                                    </div>
+                                    <div class="text">
+                                        <p>Most common methods for designing websites that work well on desktop is
+                                            responsive and adaptive design.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="list_inner">
+                                    <div class="icon">
+                                        <span>
+                                            <img class="brush"
+                                                 src="{{ asset('front') }}/img/brushes/process/{{ setting('theme.mode') }}/2.png"
+                                                 alt="" />
+                                            <img class="svg"
+                                                 src="{{ asset('front') }}/img/svg/process/{{ setting('theme.mode') }}/brush.svg"
+                                                 alt="" />
+                                        </span>
+                                    </div>
+                                    <div class="title">
                                         <h3>Client Satisfaction </h3>
                                     </div>
                                     <div class="text">
