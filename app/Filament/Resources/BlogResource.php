@@ -62,7 +62,7 @@ class BlogResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name'),
+                TextColumn::make('title'),
                 ImageColumn::make('featured_image'),
                 TextColumn::make('created_at')
                     ->dateTime(),
