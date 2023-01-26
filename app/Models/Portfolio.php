@@ -19,7 +19,7 @@ class Portfolio extends Model
         'image',
     ];
 
-    public function category(){
-        $this->belongsTo(PortfolioCategory::class,'id','portfolio_category_id');
+    public function portfolio_category(){
+        $this->belongsTo(PortfolioCategory::class);
     }
 }

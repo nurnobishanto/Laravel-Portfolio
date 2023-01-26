@@ -346,12 +346,12 @@
                     <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul class="gallery_zoom grid">
                             @foreach($portfolios as $portfolio)
-                                {{$portfolio}}
+
                                 @if($portfolio->type =="youtube")
                                     <li class="youtube grid-item">
                                         <div class="inner">
                                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
-                                                 data-category="Youtube">
+                                                 data-category="{{$portfolio->portfolio_category->name}}">
                                                 <a class="popup-youtube" href="{{$portfolio->url}}">
                                                     <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
                                                     <div class="main"
@@ -360,7 +360,7 @@
                                             </div>
                                             <div class="mobile_title">
                                                 <h3>{{$portfolio->title}}</h3>
-                                                <span>cate</span>
+                                                <span>{{$portfolio->portfolio_category->name}}</span>
                                             </div>
                                         </div>
                                     </li>
