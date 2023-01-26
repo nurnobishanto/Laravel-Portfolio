@@ -225,7 +225,7 @@
                                         <h3>Skilled Development</h3>
                                     </div>
                                     <div class="text">
-                                        <p>I will make any of your projects in a very short time and easy to use. We are ready to create any type of project as per your recommendation.</p>
+                                        <p>I will make any of your projects in a very short time and easy to use. I'm ready to create any type of project.</p>
                                     </div>
                                 </div>
                             </li>
