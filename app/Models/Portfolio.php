@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Portfolio extends Model
 {
     use HasFactory;
+    //Table Name
+    protected $table = 'portfolios';
+    //Primary key
+    public $primaryKey = 'id';
+
     protected $fillable = [
+        'id',
         'portfolio_category_id',
         'type',
         'title',
@@ -20,6 +26,6 @@ class Portfolio extends Model
     ];
 
     public function portfolio_category(){
-        $this->belongsTo(PortfolioCategory::class);
+        $this->belongsTo(PortfolioCategory::class,'portfolio_category_id');
     }
 }
