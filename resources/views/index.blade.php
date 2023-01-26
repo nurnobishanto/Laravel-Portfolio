@@ -350,7 +350,7 @@
                                     <li class="youtube grid-item">
                                         <div class="inner">
                                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
-                                                 data-category="{{$portfolio->category->name}}">
+                                                 data-category="Youtube">
                                                 <a class="popup-youtube" href="{{$portfolio->url}}">
                                                     <img src="{{ asset('front') }}/img/thumbs/42-56.jpg" alt="" />
                                                     <div class="main"
@@ -359,7 +359,7 @@
                                             </div>
                                             <div class="mobile_title">
                                                 <h3>{{$portfolio->title}}</h3>
-                                                <span>{{$portfolio->category->name}}</span>
+                                                <span>cate</span>
                                             </div>
                                         </div>
                                     </li>
@@ -445,7 +445,7 @@
                                                             </li>
                                                             <li>
                                                                 <span class="first">Category</span>
-                                                                <span><a href="#"></a></span>
+                                                                <span><a href="#">{{$portfolio->category->name}}</a></span>
                                                             </li>
                                                             <li>
                                                                 <span class="first">Date</span>
