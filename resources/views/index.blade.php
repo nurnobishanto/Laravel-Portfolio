@@ -346,6 +346,7 @@
                     <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul class="gallery_zoom grid">
                             @foreach($portfolios as $portfolio)
+                                {{$portfolio}}
                                 @if($portfolio->type =="youtube")
                                     <li class="youtube grid-item">
                                         <div class="inner">
