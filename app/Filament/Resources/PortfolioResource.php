@@ -51,7 +51,7 @@ class PortfolioResource extends Resource
                     ]),
                 TextInput::make('title')
                     ->required()->maxLength(255),
-                TextInput::make('url')->nullable()->isUrl(),
+                TextInput::make('url')->nullable()->type("url"),
                 TextInput::make('client')
                     ->maxLength(255),
                 DatePicker::make('date'),
