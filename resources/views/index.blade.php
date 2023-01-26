@@ -436,7 +436,7 @@
                                             <div class="popup_details">
                                                 <div class="main_details">
                                                     <div class="textbox">
-                                                        {{$portfolio->details}}
+                                                        {!! $portfolio->details !!}
                                                     </div>
                                                     <div class="detailbox">
                                                         <ul>
@@ -468,28 +468,7 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li>
-                                                            <div class="list_inner">
-                                                                <div class="my_image">
-                                                                    <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
-                                                                         alt="" />
-                                                                    <div class="main"
-                                                                         data-img-url="{{ asset('front') }}/img/portfolio/2.jpg">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="list_inner">
-                                                                <div class="my_image">
-                                                                    <img src="{{ asset('front') }}/img/thumbs/4-2.jpg"
-                                                                         alt="" />
-                                                                    <div class="main"
-                                                                         data-img-url="{{ asset('front') }}/img/portfolio/3.jpg">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
