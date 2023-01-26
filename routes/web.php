@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $skills = Skill::all()->random(5);
+    return view('index',compact(['skills']));
 });

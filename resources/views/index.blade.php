@@ -537,31 +537,17 @@
 
                             </div>
                             <div class="dodo_progress wow fadeInUp" data-wow-duration="1s">
-                                <div class="progress_inner" data-value="85" data-color="#f75023">
-                                    <span><span class="label">Illustrator</span><span
-                                            class="number">85%</span></span>
-                                    <div class="background">
-                                        <div class="bar">
-                                            <div class="bar_in"></div>
+                                @foreach($skills as $skill)
+                                    <div class="progress_inner" data-value="{{$skill->value}}" data-color="{{$skill->color}}">
+                                    <span><span class="label">{{$skill->name}}</span><span
+                                            class="number">{{$skill->value}}%</span></span>
+                                        <div class="background">
+                                            <div class="bar">
+                                                <div class="bar_in"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="progress_inner" data-value="95" data-color="#1cbe59">
-                                    <span><span class="label">Photoshop</span><span class="number">95%</span></span>
-                                    <div class="background">
-                                        <div class="bar">
-                                            <div class="bar_in"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress_inner" data-value="75" data-color="#8067f0">
-                                    <span><span class="label">Figma</span><span class="number">75%</span></span>
-                                    <div class="background">
-                                        <div class="bar">
-                                            <div class="bar_in"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="right">
