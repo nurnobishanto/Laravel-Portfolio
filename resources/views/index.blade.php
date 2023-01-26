@@ -532,7 +532,7 @@
                     <div class="wrapper">
                         <div class="left">
                             <div class="dizme_tm_main_title wow fadeInUp" data-wow-duration="1s" data-align="left">
-                                <span>Design is Life</span>
+                                <span>Development is Life</span>
                                 <h3>I Develop Skills Regularly to Keep Me Update</h3>
 
                             </div>

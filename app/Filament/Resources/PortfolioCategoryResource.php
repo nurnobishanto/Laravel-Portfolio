@@ -5,13 +5,17 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PortfolioCategoryResource\Pages;
 use App\Filament\Resources\PortfolioCategoryResource\RelationManagers;
 use App\Models\PortfolioCategory;
+use Closure;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class PortfolioCategoryResource extends Resource
 {
@@ -32,17 +36,14 @@ class PortfolioCategoryResource extends Resource
     {
         return $form
             ->schema([
-                // Forms\Components\TextInput::make('name')
-                //     ->required()
-                //     ->maxLength(255),
-                // Forms\Components\TextInput::make('slug')
-                //     ->required()
-                //     ->maxLength(255),
-                \Camya\Filament\Forms\Components\TitleWithSlugInput::make(
-                    fieldTitle: 'title', 
-                    fieldSlug: 'slug', 
-                ),
-                    
+                TextInput::make('name')
+                    ->reactive()
+                    ->afterStateUpdated(function (Closure $set, $state) {
+                        $set('slug', Str::slug($state));
+                    }),
+                TextInput::make('slug'),
+
+
             ]);
     }
 
@@ -50,13 +51,9 @@ class PortfolioCategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('slug'),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
-            ])
+                TextColumn::make('name'),
+                TextColumn::make('slug'),
+            ])->defaultSort('created_at','desc')
             ->filters([
                 //
             ])
@@ -67,14 +64,14 @@ class PortfolioCategoryResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -82,5 +79,5 @@ class PortfolioCategoryResource extends Resource
             'create' => Pages\CreatePortfolioCategory::route('/create'),
             'edit' => Pages\EditPortfolioCategory::route('/{record}/edit'),
         ];
-    }    
+    }
 }
