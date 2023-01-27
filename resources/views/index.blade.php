@@ -777,95 +777,51 @@
                     <div class="total">
                         <div class="in">
                             <ul class="owl-carousel owl-theme">
+                                @foreach($testimonials as $testimonial)
                                 <li>
                                     <div class="icon">
                                         <img class="svg" src="{{ asset('front') }}/img/svg/testimonials/quote.svg"
                                             alt="" />
                                     </div>
                                     <div class="text">
-                                        <p>I rarely like to write reviews, but the Marketify team truly deserve a
-                                            standing ovation for their customer support, customisation and most
-                                            importantly, friendliness and professionalism. Many thanks once again for
-                                            everything and hope that I get to deal with you again in the near future.
-                                        </p>
+                                        <p>{{$testimonial->text}}</p>
                                     </div>
                                     <div class="short">
                                         <div class="image">
                                             <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/testimonials/4.jpg"></div>
+                                                data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
                                         </div>
                                         <div class="detail">
-                                            <h3>Mike Anderson</h3>
-                                            <span>Vivaco Studio</span>
+                                            <h3>{{$testimonial->name}}</h3>
+                                            <span>{{$testimonial->company}}</span>
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="icon">
-                                        <img class="svg" src="{{ asset('front') }}/img/svg/testimonials/quote.svg"
-                                            alt="" />
-                                    </div>
-                                    <div class="text">
-                                        <p>Really the Code Quality, Customer Support, and design are awesome and its
-                                            good support they are giving. They give an instant solution to our needs.
-                                            Really awesome. I will strongly recommend to my friends. Simply amazing team
-                                            and amazing theme! Thank you from United States of America!</p>
-                                    </div>
-                                    <div class="short">
-                                        <div class="image">
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/testimonials/3.jpg"></div>
-                                        </div>
-                                        <div class="detail">
-                                            <h3>Keita Smith</h3>
-                                            <span>ABC Group</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <img class="svg" src="{{ asset('front') }}/img/svg/testimonials/quote.svg"
-                                            alt="" />
-                                    </div>
-                                    <div class="text">
-                                        <p>Loved the template design, documentation, customizability and the customer
-                                            support from Marketify team! I am a noob in programming with very little
-                                            knowledge about coding but the Marketify team helped me to launch my resume
-                                            website successfully. Much recommended!</p>
-                                    </div>
-                                    <div class="short">
-                                        <div class="image">
-                                            <div class="main"
-                                                data-img-url="{{ asset('front') }}/img/testimonials/6.jpg"></div>
-                                        </div>
-                                        <div class="detail">
-                                            <h3>Alan Walker</h3>
-                                            <span>Web Designer</span>
-                                        </div>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="left_details">
-                            <div class="det_image one wow fadeIn" data-wow-duration="1s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/2.jpg"></div>
-                            <div class="det_image two wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/1.jpg"></div>
-                            <div class="det_image three wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/3.jpg"></div>
-                            <div class="det_image four wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/4.jpg"></div>
+                            <?php $c_1 ="one"; $c_2 ="two"; $c_3 ="three"; $c_4 ="four"; $i=1;?>
+                            @foreach($testimonials as $testimonial)
+                                @if($i<5)
+                            <div class="det_image {{$c_.$i}} wow fadeIn" data-wow-duration="1s"
+                                data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @endif
+                                <?php $i++; ?>
+                            @endforeach
                             <span class="circle green animPulse"></span>
                             <span class="circle yellow animPulse"></span>
                             <span class="circle border animPulse"></span>
                         </div>
                         <div class="right_details">
-                            <div class="det_image one wow fadeIn" data-wow-duration="1s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/5.jpg"></div>
-                            <div class="det_image two wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/6.jpg"></div>
-                            <div class="det_image three wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"
-                                data-img-url="{{ asset('front') }}/img/testimonials/7.jpg"></div>
+                            <?php $c_1 ="one"; $c_2 ="two"; $c_3 ="three"; $c_4 ="four"; $i=1;?>
+                            @foreach($testimonials as $testimonial)
+                                @if($i<4)
+                                    <div class="det_image {{$c_.$i}} wow fadeIn" data-wow-duration="1s"
+                                         data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @endif
+                                    <?php $i++; ?>
+                            @endforeach
                             <span class="circle yellow animPulse"></span>
                             <span class="circle purple animPulse"></span>
                             <span class="circle border animPulse"></span>
@@ -884,54 +840,19 @@
                 <div class="container">
                     <div class="partners_inner">
                         <ul>
-                            <li class="wow fadeIn" data-wow-duration="1s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/1.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
+
+                            @foreach($companies as $company)
                             <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                                 <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/2.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
+                                    @if(setting('theme.mode')=='dark')
+                                        <img src="{{ asset('storage/'.$company->dark_logo) }}" alt="{{$company->name}}" />
+                                    @else
+                                        <img src="{{ asset('storage/'.$company->logo) }}" alt="{{$company->name}}" />
+                                    @endif
+                                    <a class="dizme_tm_full_link" a href="{{$company->url}}"></a>
                                 </div>
                             </li>
-                            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/3.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
-                            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/4.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
-                            <li class="wow fadeIn" data-wow-duration="1s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/5.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
-                            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/6.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
-                            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/7.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
-                            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                <div class="list_inner">
-                                    <img src="{{ asset('front') }}/img/partners/dark/8.png" alt="" />
-                                    <a class="dizme_tm_full_link" a href="#"></a>
-                                </div>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
