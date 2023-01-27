@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->string('logo')->nullable();
+            $table->text('logo')->nullable();
             $table->string('url')->nullable();
-            $table->string('dark_logo')->nullable();
+            $table->text('dark_logo')->nullable();
             $table->timestamps();
         });
     }

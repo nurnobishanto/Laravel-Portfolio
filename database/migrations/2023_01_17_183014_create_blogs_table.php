@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('user_id')->nullable()->constrained()->cascadeOnDelete();
             $table->string('title')->unique();
             $table->string('slug')->unique();
-            $table->string('featured_image')->nullable();
+            $table->text('featured_image')->nullable();
             $table->longText('body')->nullable();
             $table->boolean('is_published')->nullable();
             $table->date('published_date')->nullable();
