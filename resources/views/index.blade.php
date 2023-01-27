@@ -596,7 +596,7 @@
                                     </span>
                                     <div class="title">
                                         <h3>{!! $service->title !!}</h3>
-                                        <span class="price">{!! $service->sub_title !!}</span>
+                                        <span class="">{!! $service->sub_title !!}</span>
                                     </div>
                                     <div class="text">
                                         <p>{{ Str::limit($service->body, 100) }}</p>
