@@ -14,6 +14,5 @@ class Company extends Model
         'logo',
         'url',
         'dark_logo',
-
     ];
 }
