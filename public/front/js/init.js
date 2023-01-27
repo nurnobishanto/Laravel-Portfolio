@@ -129,7 +129,7 @@ function dizme_tm_service_popup(){
 		var content = parent.find('.service_hidden_details').html();
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.service_popup_informations').prepend('<div class="image"><img src="'+elImage+'" alt="'+title+'" /><div class="main" data-img-url="'+elImage+'"></div></div>');
+		modalBox.find('.service_popup_informations').prepend('<div class="image"><img src="'+elImage+'" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
 		dizme_tm_data_images();
 		modalBox.find('.service_popup_informations .image').after('<div class="main_title">'+title+'</div>');
 		return false;
