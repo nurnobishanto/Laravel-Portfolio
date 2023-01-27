@@ -14,6 +14,8 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
@@ -54,7 +56,10 @@ class ServiceResource extends Resource
     {
         return $table
             ->columns([
-                //
+                ImageColumn::make('icon'),
+                TextColumn::make('title'),
+                TextColumn::make('sub_title'),
+
             ])
             ->filters([
                 //

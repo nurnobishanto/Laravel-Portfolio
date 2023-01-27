@@ -585,174 +585,36 @@
                     </div>
                     <div class="service_list">
                         <ul>
-                            <li class="wow fadeInLeft" data-wow-duration="1s">
-                                <div class="list_inner tilt-effect">
-                                    <span class="icon">
-                                        <img class="svg" src="{{ asset('front') }}/img/svg/service/anchor.svg"
-                                            alt="" />
-                                        <img class="back" src="{{ asset('front') }}/img/brushes/service/{{setting('theme.mode')}}/1.png"
-                                            alt="" />
-                                    </span>
-                                    <div class="title">
-                                        <h3>Creative Design</h3>
-                                        <span class="price">Starts from <span>$99</span></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Web design refers to the design of websites that are displayed on the
-                                            internet. It usually refers to the user experience aspects of website
-                                            development</p>
-                                    </div>
-                                    <a class="dizme_tm_full_link" href="#"></a>
-                                    <img class="popup_service_image" src="{{ asset('front') }}/img/service/1.jpg"
-                                        alt="" />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            @foreach($services as $service)
                             <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                                 <div class="list_inner tilt-effect">
                                     <span class="icon">
-                                        <img class="svg" src="{{ asset('front') }}/img/svg/service/physics.svg"
+                                        <img class="svg" src="{{ asset('storage/'.$service->icon) }}"
                                             alt="" />
                                         <img class="back" src="{{ asset('front') }}/img/brushes/service/{{setting('theme.mode')}}/2.png"
                                             alt="" />
                                     </span>
                                     <div class="title">
-                                        <h3>Graphic Design</h3>
-                                        <span class="price">Starts from <span>$199</span></span>
+                                        <h3>{{$service->title}}</h3>
+                                        <span class="price">{{$service->sub_title}}</span>
                                     </div>
                                     <div class="text">
-                                        <p>Web design refers to the design of websites that are displayed on the
-                                            internet. It usually refers to the user experience aspects of website
-                                            development</p>
+                                        <p>{{ Str::limit($service->body, 100) }}</p>
                                     </div>
                                     <a class="dizme_tm_full_link" href="#"></a>
-                                    <img class="popup_service_image" src="{{ asset('front') }}/img/service/{{setting('theme.mode')}}/2.jpg"
+                                    <img class="popup_service_image" src="{{ asset('storage/'.$service->image ) }}"
                                         alt="" />
                                     <div class="service_hidden_details">
                                         <div class="service_popup_informations">
                                             <div class="descriptions">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
+                                               {!! $service->body !!}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="wow fadeInLeft" data-wow-duration="1s">
-                                <div class="list_inner tilt-effect">
-                                    <span class="icon">
-                                        <img class="svg" src="{{ asset('front') }}/img/svg/service/contact.svg"
-                                            alt="" />
-                                        <img class="back" src="{{ asset('front') }}/img/brushes/service/{{setting('theme.mode')}}/3.png"
-                                            alt="" />
-                                    </span>
-                                    <div class="title">
-                                        <h3>UI/UX Design</h3>
-                                        <span class="price">Starts from <span>$299</span></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Web design refers to the design of websites that are displayed on the
-                                            internet. It usually refers to the user experience aspects of website
-                                            development</p>
-                                    </div>
-                                    <a class="dizme_tm_full_link" href="#"></a>
-                                    <img class="popup_service_image" src="{{ asset('front') }}/img/service/3.jpg"
-                                        alt="" />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                                <div class="list_inner tilt-effect">
-                                    <span class="icon">
-                                        <img class="svg" src="{{ asset('front') }}/img/svg/service/web.svg"
-                                            alt="" />
-                                        <img class="back" src="{{ asset('front') }}/img/brushes/service/{{setting('theme.mode')}}/4.png"
-                                            alt="" />
-                                    </span>
-                                    <div class="title">
-                                        <h3>Web Design</h3>
-                                        <span class="price">Starts from <span>$399</span></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Web design refers to the design of websites that are displayed on the
-                                            internet. It usually refers to the user experience aspects of website
-                                            development</p>
-                                    </div>
-                                    <a class="dizme_tm_full_link" href="#"></a>
-                                    <img class="popup_service_image" src="{{ asset('front') }}/img/service/4.jpg"
-                                        alt="" />
-                                    <div class="service_hidden_details">
-                                        <div class="service_popup_informations">
-                                            <div class="descriptions">
-                                                <p>Dizme is a leading web design agency with an award-winning design
-                                                    team that creates innovative, effective websites that capture your
-                                                    brand, improve your conversion rates, and maximize your revenue to
-                                                    help grow your business and achieve your goals.</p>
-                                                <p>In today’s digital world, your website is the first interaction
-                                                    consumers have with your business. That's why almost 95 percent of a
-                                                    user’s first impression relates to web design. It’s also why web
-                                                    design services can have an immense impact on your company’s bottom
-                                                    line.</p>
-                                                <p>That’s why more companies are not only reevaluating their website’s
-                                                    design but also partnering with Kura, the web design agency that’s
-                                                    driven more than $2.4 billion in revenue for its clients. With over
-                                                    50 web design awards under our belt, we're confident we can design a
-                                                    custom website that drives sales for your unique business.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            @endforeach
+
                         </ul>
                     </div>
                 </div>
