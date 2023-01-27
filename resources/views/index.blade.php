@@ -804,7 +804,7 @@
                             <?php $c_1 ="one"; $c_2 ="two"; $c_3 ="three"; $c_4 ="four"; $i=1;?>
                             @foreach($testimonials as $testimonial)
                                 @if($i<5)
-                            <div class="det_image {{$c_.$i}} wow fadeIn" data-wow-duration="1s"
+                            <div class="det_image {{'c_'.$i}} wow fadeIn" data-wow-duration="1s"
                                 data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
                                 @endif
                                 <?php $i++; ?>
@@ -817,7 +817,7 @@
                             <?php $c_1 ="one"; $c_2 ="two"; $c_3 ="three"; $c_4 ="four"; $i=1;?>
                             @foreach($testimonials as $testimonial)
                                 @if($i<4)
-                                    <div class="det_image {{$c_.$i}} wow fadeIn" data-wow-duration="1s"
+                                    <div class="det_image {{'c_'.$i}} wow fadeIn" data-wow-duration="1s"
                                          data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
                                 @endif
                                     <?php $i++; ?>
