@@ -825,13 +825,13 @@
                         <div class="right_details">
                             <?php  $i=1;?>
                             @foreach($testimonials as $testimonial)
-                                @if($i==1)
+                                @if($i==4)
                                     <div class="det_image one wow fadeIn" data-wow-duration="1s"
                                          data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
-                                @elseif($i==2)
+                                @elseif($i==5)
                                     <div class="det_image two wow fadeIn" data-wow-duration="1s"
                                          data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
-                                @elseif($i==3)
+                                @elseif($i==6)
                                     <div class="det_image three wow fadeIn" data-wow-duration="1s"
                                          data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
                                 @endif
