@@ -590,20 +590,20 @@
                                 <div class="list_inner tilt-effect">
                                     <span class="icon">
                                         <img class="svg" src="{{ asset('storage/'.$service->icon) }}"
-                                            alt="" />
+                                            alt="{{$service->title}}" />
                                         <img class="back" src="{{ asset('front') }}/img/brushes/service/{{setting('theme.mode')}}/2.png"
-                                            alt="" />
+                                            alt="{{$service->title}}" />
                                     </span>
                                     <div class="title">
-                                        <h3>{{$service->title}}</h3>
-                                        <span class="price">{{$service->sub_title}}</span>
+                                        <h3>{!! $service->title !!}</h3>
+                                        <span class="price">{!! $service->sub_title !!}</span>
                                     </div>
                                     <div class="text">
                                         <p>{{ Str::limit($service->body, 100) }}</p>
                                     </div>
                                     <a class="dizme_tm_full_link" href="#"></a>
                                     <img class="popup_service_image" src="{{ asset('storage/'.$service->image ) }}"
-                                        alt="" />
+                                        alt="{{$service->title}}" />
                                     <div class="service_hidden_details">
                                         <div class="service_popup_informations">
                                             <div class="descriptions">
