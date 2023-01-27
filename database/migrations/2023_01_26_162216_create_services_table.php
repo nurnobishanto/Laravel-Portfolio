@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('slug')->nullable();
             $table->string('sub_title')->nullable();
             $table->string('image')->nullable();
-            $table->string('body')->nullable();
+            $table->longText('body')->nullable();
             $table->timestamps();
         });
     }
