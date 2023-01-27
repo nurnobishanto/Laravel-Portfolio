@@ -519,6 +519,13 @@
                                                 </div>
                                                 <div class="additional_images">
                                                     <embed src="{{$portfolio->url}}" width="100%" height="350px">
+                                                    <div class="mapouter">
+                                                        <div class="gmap_canvas">
+                                                            <iframe width="100%" height="375" id="gmap_canvas"
+                                                                    src="{{$portfolio->url}}" frameborder="0" scrolling="no"
+                                                                    marginheight="0" marginwidth="0"></iframe>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
