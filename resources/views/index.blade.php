@@ -599,7 +599,7 @@
                                         <span class="">{!! $service->sub_title !!}</span>
                                     </div>
                                     <div class="text">
-                                        <p>{{ Str::limit($service->body, 100) }}</p>
+                                        <p>{{ Str::limit(strip_tags($service->body), 150) }}</p>
                                     </div>
                                     <a class="dizme_tm_full_link" href="#"></a>
                                     <img class="popup_service_image" src="{{ asset('storage/'.$service->image ) }}"
