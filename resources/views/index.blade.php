@@ -801,11 +801,20 @@
                             </ul>
                         </div>
                         <div class="left_details">
-                            <?php $c_1 ="one"; $c_2 ="two"; $c_3 ="three"; $c_4 ="four"; $i=1;?>
+                            <?php  $i=1;?>
                             @foreach($testimonials as $testimonial)
-                                @if($i<5)
-                            <div class="det_image {{'c_'.$i}} wow fadeIn" data-wow-duration="1s"
-                                data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @if($i==1)
+                                <div class="det_image one wow fadeIn" data-wow-duration="1s"
+                                    data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @elseif($i==2)
+                                    <div class="det_image two wow fadeIn" data-wow-duration="1s"
+                                         data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @elseif($i==3)
+                                <div class="det_image three wow fadeIn" data-wow-duration="1s"
+                                     data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @elseif($i==4)
+                                    <div class="det_image four wow fadeIn" data-wow-duration="1s"
+                                         data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
                                 @endif
                                 <?php $i++; ?>
                             @endforeach
@@ -814,13 +823,20 @@
                             <span class="circle border animPulse"></span>
                         </div>
                         <div class="right_details">
-                            <?php $c_1 ="one"; $c_2 ="two"; $c_3 ="three"; $c_4 ="four"; $i=1;?>
+                            <?php  $i=1;?>
                             @foreach($testimonials as $testimonial)
-                                @if($i<4)
-                                    <div class="det_image {{'c_'.$i}} wow fadeIn" data-wow-duration="1s"
+                                @if($i==1)
+                                    <div class="det_image one wow fadeIn" data-wow-duration="1s"
+                                         data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @elseif($i==2)
+                                    <div class="det_image two wow fadeIn" data-wow-duration="1s"
+                                         data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
+                                @elseif($i==3)
+                                    <div class="det_image three wow fadeIn" data-wow-duration="1s"
                                          data-img-url="{{ asset('storage/'.$testimonial->image) }}"></div>
                                 @endif
-                                    <?php $i++; ?>
+                                    <?php $i++ ; ?>
+
                             @endforeach
                             <span class="circle yellow animPulse"></span>
                             <span class="circle purple animPulse"></span>
