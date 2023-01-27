@@ -1027,7 +1027,7 @@
                         <span>Contact Me</span>
                         <h3>I Want To Hear From You</h3>
                         <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and
-                            8:00 p.m. ET, Monday through Friday</p>
+                            8:00 p.m. ET, Saturday ay through Thursday</p>
                     </div>
                     <div class="contact_inner">
                         <div class="left wow fadeInLeft" data-wow-duration="1s">
@@ -1039,7 +1039,7 @@
                                         </div>
                                         <div class="short">
                                             <h3>Address</h3>
-                                            <span>20, Somewhere in world</span>
+                                            <span>{{setting('my.address')}}</span>
                                         </div>
                                     </div>
                                 </li>
@@ -1050,7 +1050,7 @@
                                         </div>
                                         <div class="short">
                                             <h3>Email</h3>
-                                            <span><a href="#">hello@dizme.com</a></span>
+                                            <span><a href="mailto:{{setting('my.email')}}">{{setting('my.email')}}</a></span>
                                         </div>
                                     </div>
                                 </li>
@@ -1061,7 +1061,18 @@
                                         </div>
                                         <div class="short">
                                             <h3>Phone</h3>
-                                            <span>+123 456 7890</span>
+                                            <span>{{setting('my.phone')}}</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_inner">
+                                        <div class="icon purpleBackground">
+                                            <i class="icon-phone purpleText"></i>
+                                        </div>
+                                        <div class="short">
+                                            <h3>Whats App</h3>
+                                            <span>{{setting('my.whatsapp')}}</span>
                                         </div>
                                     </div>
                                 </li>
@@ -1099,7 +1110,7 @@
                             <div class="gmap_canvas"><iframe width="100%" height="375" id="gmap_canvas"
                                     src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                    href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a><br>
+                                    href="{{setting('my.map')}}"></a><br>
                                 <style>
                                     .mapouter {
                                         position: relative;
