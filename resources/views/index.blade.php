@@ -520,7 +520,7 @@
                                                             </li>
                                                             <li>
                                                                 <div class="dizme_tm_button">
-                                                                    <a target="_blank" class="btn btn-primary" href="{{$portfolio->url}}">Visit</a>
+                                                                    <a target="_blank"  href="{{$portfolio->url}}"><span>Visit</span></a>
                                                                 </div>
 
                                                             </li>
