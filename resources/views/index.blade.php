@@ -734,7 +734,7 @@
                                     @else
                                         <img src="{{ asset('storage/'.$company->logo) }}" alt="{{$company->name}}" />
                                     @endif
-                                    <a target="_blank" title="{{$company->name}}" class="dizme_tm_full_link" a href="{{$company->url}}"></a>
+                                    <a target="_blank" title="{{$company->name}}" class="dizme_tm_full_link"  href="{{$company->url}}"></a>
                                 </div>
                             </li>
                             @endforeach
