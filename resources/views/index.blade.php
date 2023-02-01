@@ -514,10 +514,7 @@
                                                                 <span class="first">Date</span>
                                                                 <span>{{$portfolio->date}}</span>
                                                             </li>
-                                                            <li>
-                                                                <span class="first">Url</span>
-                                                                <span>{{$portfolio->url}}</span>
-                                                            </li>
+
                                                             <li>
                                                                 <div class="dizme_tm_button">
                                                                     <a target="_blank"  href="{{$portfolio->url}}"><span>Visit</span></a>
