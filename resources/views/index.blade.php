@@ -10,8 +10,8 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta name="description" content="Name of your web site">
-    <meta name="author" content="Marketify">
+    <meta name="description" content="{{ setting('my.name') }} | {{ setting('my.tagline') }}">
+    <meta name="author" content="{{ setting('my.name') }} | {{ setting('my.tagline') }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -53,7 +53,7 @@
                 <div class="mobile_in">
                     <div class="logo">
                         @if (strlen(setting('my.logo') > 5))
-                            <a href="#"><img src="{{ asset('front') }}/img/logo/logo.png"
+                            <a href="#"><img src="{{ asset('storage/').setting('my.logo') }}"
                                     alt="{{ setting('my.name') }}" /></a>
                         @else
                             <a class="text-decoration-none" href="#">

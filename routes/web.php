@@ -1,12 +1,7 @@
 <?php
 
-use App\Models\Blog;
-use App\Models\Company;
-use App\Models\Portfolio;
-use App\Models\PortfolioCategory;
-use App\Models\Service;
-use App\Models\Skill;
-use App\Models\Testimonial;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $blogs = Blog::orderBy('created_at','desc')->take(3)->get();
-    $companies = Company::all();
-    $services = Service::all();
-    $testimonials = Testimonial::all();
-    $skills = Skill::all()->random(5);
-    $p_cats = PortfolioCategory::all();
-    $portfolios = Portfolio::all();
-    return view('index',compact(['skills','p_cats','portfolios','blogs','companies','services','testimonials']));
-});
+
+Route::get('/',[WebsiteController::class,'index'])->name('home');
+Route::get('/contact',[WebsiteController::class,'contact'])->name('contact');
+Route::get('/blog',[WebsiteController::class,'blog'])->name('blog');
+Route::get('/services',[WebsiteController::class,'services'])->name('services');
+Route::get('/service/{slug}',[WebsiteController::class,'services'])->name('service');
+Route::get('/portfolios',[WebsiteController::class,'portfolios'])->name('portfolios');
+Route::get('/portfolio/{slug}',[WebsiteController::class,'portfolios'])->name('portfolio');
+Route::post('/contact-store',[ContactController::class,'contact_store']);
+Route::get('/{slug}',[WebsiteController::class,'content'])->name('content');
