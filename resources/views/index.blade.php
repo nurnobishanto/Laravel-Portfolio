@@ -514,16 +514,14 @@
                                                                 <span class="first">Date</span>
                                                                 <span>{{$portfolio->date}}</span>
                                                             </li>
+                                                            <li>
+                                                                <span class="first">Url</span>
+                                                                <span>{{$portfolio->url}}</span>
+                                                            </li>
+                                                            <li>
+                                                                <a target="_blank" class="btn btn-primary" href="{{$portfolio->url}}">Visit</a>
+                                                            </li>
                                                         </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="additional_images">
-                                                    <div class="mapouter">
-                                                        <div class="gmap_canvas">
-                                                            <iframe width="100%" height="375" id="gmap_canvas"
-                                                                    src="{{$portfolio->url}}" frameborder="0" scrolling="no"
-                                                                    marginheight="0" marginwidth="0"></iframe>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
