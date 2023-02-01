@@ -498,7 +498,7 @@
                                             <div class="popup_details">
                                                 <div class="main_details">
                                                     <div class="textbox">
-                                                        {!! $portfolio->details !!}
+{{--                                                        {!! $portfolio->details !!}--}}
                                                     </div>
                                                     <div class="detailbox">
                                                         <ul>
@@ -523,6 +523,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
+                                                    {!! $portfolio->details !!}
                                                 </div>
                                             </div>
                                         </div>
