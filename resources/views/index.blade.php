@@ -519,7 +519,10 @@
                                                                 <span>{{$portfolio->url}}</span>
                                                             </li>
                                                             <li>
-                                                                <a target="_blank" class="btn btn-primary" href="{{$portfolio->url}}">Visit</a>
+                                                                <div class="dizme_tm_button">
+                                                                    <a target="_blank" class="btn btn-primary" href="{{$portfolio->url}}">Visit</a>
+                                                                </div>
+
                                                             </li>
                                                         </ul>
                                                     </div>
