@@ -9,6 +9,7 @@ use App\Models\PortfolioCategory;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -58,7 +59,8 @@ class PortfolioResource extends Resource
                 TextInput::make('client')
                     ->maxLength(255),
                 DatePicker::make('date'),
-                RichEditor::make('details'),
+                //RichEditor::make('details'),
+                MarkdownEditor::make('details'),
                 FileUpload::make('image'),
 
 
