@@ -152,6 +152,7 @@
       <path value="$PROJECT_DIR$/vendor/filipfonal/filament-log-manager" />
       <path value="$PROJECT_DIR$/vendor/jeffgreco13/filament-breezy" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/mohamedsabil83/filament-forms-tinyeditor" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

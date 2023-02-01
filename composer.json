@@ -24,6 +24,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
+        "mohamedsabil83/filament-forms-tinyeditor": "^1.6",
         "ramnzys/filament-email-log": "^0.2.2"
     },
     "require-dev": {

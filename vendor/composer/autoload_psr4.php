@@ -70,6 +70,7 @@ return array(
     'ParagonIE\\ConstantTime\\' => array($vendorDir . '/paragonie/constant_time_encoding/src'),
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Mohamedsabil83\\FilamentFormsTinyeditor\\' => array($vendorDir . '/mohamedsabil83/filament-forms-tinyeditor/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'Livewire\\' => array($vendorDir . '/livewire/livewire/src'),
     'League\\Uri\\' => array($vendorDir . '/league/uri-parser/src'),

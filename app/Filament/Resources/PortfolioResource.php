@@ -21,6 +21,7 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
 class PortfolioResource extends Resource
 {
@@ -59,8 +60,7 @@ class PortfolioResource extends Resource
                 TextInput::make('client')
                     ->maxLength(255),
                 DatePicker::make('date'),
-                //RichEditor::make('details'),
-                MarkdownEditor::make('details'),
+                TinyEditor::make('details'),
                 FileUpload::make('image'),
 
 

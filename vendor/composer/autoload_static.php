@@ -142,6 +142,7 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Mohamedsabil83\\FilamentFormsTinyeditor\\' => 39,
             'Masterminds\\' => 12,
         ),
         'L' => 
@@ -500,6 +501,10 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Mohamedsabil83\\FilamentFormsTinyeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mohamedsabil83/filament-forms-tinyeditor/src',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -819,6 +824,10 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'App\\Filament\\Resources\\PortfolioResource\\Pages\\CreatePortfolio' => __DIR__ . '/../..' . '/app/Filament/Resources/PortfolioResource/Pages/CreatePortfolio.php',
         'App\\Filament\\Resources\\PortfolioResource\\Pages\\EditPortfolio' => __DIR__ . '/../..' . '/app/Filament/Resources/PortfolioResource/Pages/EditPortfolio.php',
         'App\\Filament\\Resources\\PortfolioResource\\Pages\\ListPortfolios' => __DIR__ . '/../..' . '/app/Filament/Resources/PortfolioResource/Pages/ListPortfolios.php',
+        'App\\Filament\\Resources\\ServiceResource' => __DIR__ . '/../..' . '/app/Filament/Resources/ServiceResource.php',
+        'App\\Filament\\Resources\\ServiceResource\\Pages\\CreateService' => __DIR__ . '/../..' . '/app/Filament/Resources/ServiceResource/Pages/CreateService.php',
+        'App\\Filament\\Resources\\ServiceResource\\Pages\\EditService' => __DIR__ . '/../..' . '/app/Filament/Resources/ServiceResource/Pages/EditService.php',
+        'App\\Filament\\Resources\\ServiceResource\\Pages\\ListServices' => __DIR__ . '/../..' . '/app/Filament/Resources/ServiceResource/Pages/ListServices.php',
         'App\\Filament\\Resources\\SkillResource' => __DIR__ . '/../..' . '/app/Filament/Resources/SkillResource.php',
         'App\\Filament\\Resources\\SkillResource\\Pages\\CreateSkill' => __DIR__ . '/../..' . '/app/Filament/Resources/SkillResource/Pages/CreateSkill.php',
         'App\\Filament\\Resources\\SkillResource\\Pages\\EditSkill' => __DIR__ . '/../..' . '/app/Filament/Resources/SkillResource/Pages/EditSkill.php',
@@ -827,10 +836,13 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'App\\Filament\\Resources\\TestimonialResource\\Pages\\CreateTestimonial' => __DIR__ . '/../..' . '/app/Filament/Resources/TestimonialResource/Pages/CreateTestimonial.php',
         'App\\Filament\\Resources\\TestimonialResource\\Pages\\EditTestimonial' => __DIR__ . '/../..' . '/app/Filament/Resources/TestimonialResource/Pages/EditTestimonial.php',
         'App\\Filament\\Resources\\TestimonialResource\\Pages\\ListTestimonials' => __DIR__ . '/../..' . '/app/Filament/Resources/TestimonialResource/Pages/ListTestimonials.php',
+        'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\WebsiteController' => __DIR__ . '/../..' . '/app/Http/Controllers/WebsiteController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\HttpsProtocol' => __DIR__ . '/../..' . '/app/Http/Middleware/HttpsProtocol.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
@@ -4715,6 +4727,8 @@ class ComposerStaticInit68e59f90acbd1fc751723b2e9a30e4f4
         'Mockery\\Undefined' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Undefined.php',
         'Mockery\\VerificationDirector' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationDirector.php',
         'Mockery\\VerificationExpectation' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationExpectation.php',
+        'Mohamedsabil83\\FilamentFormsTinyeditor\\Components\\TinyEditor' => __DIR__ . '/..' . '/mohamedsabil83/filament-forms-tinyeditor/src/Components/TinyEditor.php',
+        'Mohamedsabil83\\FilamentFormsTinyeditor\\FilamentFormsTinyeditorServiceProvider' => __DIR__ . '/..' . '/mohamedsabil83/filament-forms-tinyeditor/src/FilamentFormsTinyeditorServiceProvider.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
