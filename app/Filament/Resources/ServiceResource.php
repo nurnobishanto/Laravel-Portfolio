@@ -49,7 +49,7 @@ class ServiceResource extends Resource
                     ->unique(ignorable: fn ($record) => $record),
                 TextInput::make('sub_title')->required(),
                 FileUpload::make('image')->required(),
-                TinyEditor::make('body')->required(),
+                RichEditor::make('body')->required(),
             ]);
     }
 

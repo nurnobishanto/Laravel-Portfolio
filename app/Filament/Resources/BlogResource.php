@@ -55,7 +55,7 @@ class BlogResource extends Resource
                 TextInput::make('slug')->required()->placeholder('Enter your slug')
                     ->unique(ignorable: fn ($record) => $record),
                 FileUpload::make('featured_image'),
-                TinyEditor::make('body'),
+                RichEditor::make('body'),
             ]);
     }
 
