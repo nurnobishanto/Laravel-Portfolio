@@ -141,6 +141,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/livewire/livewire" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/queents/console-helpers" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/mohamedsabil83/filament-forms-tinyeditor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
