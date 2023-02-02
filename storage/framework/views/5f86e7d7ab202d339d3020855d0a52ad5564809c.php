@@ -1,0 +1,3 @@
+<svg class="h-5 w-5 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+</svg><?php /**PATH E:\Laravel Pro Project\Laravel-Portfolio\storage\framework\views/aebf2a22bb06f4f4d8a6b7ae3e8a8b795e20dd04.blade.php ENDPATH**/ ?>

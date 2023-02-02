@@ -1,0 +1,259 @@
+<?php return array (
+  '3x1io/filament-browser' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'io3x1\\FilamentBrowser\\FilamentBrowserProvider',
+    ),
+  ),
+  '3x1io/filament-commands' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'io3x1\\FilamentCommands\\FilamentCommandsProvider',
+    ),
+  ),
+  'akaunting/laravel-money' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Akaunting\\Money\\Provider',
+    ),
+  ),
+  'alexjustesen/filament-spatie-laravel-activitylog' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AlexJustesen\\FilamentSpatieLaravelActivitylog\\FilamentSpatieLaravelActivitylogServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentSpatieLaravelActivitylog' => 'AlexJustesen\\FilamentSpatieLaravelActivitylog\\Facades\\FilamentSpatieLaravelActivitylog',
+    ),
+  ),
+  'awcodes/filament-versions' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'FilamentVersions\\FilamentVersionsServiceProvider',
+    ),
+  ),
+  'bezhansalleh/filament-shield' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BezhanSalleh\\FilamentShield\\FilamentShieldServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentShield' => 'BezhanSalleh\\FilamentShield\\Facades\\FilamentShield',
+    ),
+  ),
+  'blade-ui-kit/blade-heroicons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BladeUI\\Heroicons\\BladeHeroiconsServiceProvider',
+    ),
+  ),
+  'blade-ui-kit/blade-icons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
+    ),
+  ),
+  'camya/filament-title-with-slug' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Camya\\Filament\\FilamentTitleWithSlugServiceProvider',
+    ),
+  ),
+  'cms-multi/filament-clear-cache' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'CmsMulti\\FilamentClearCache\\FilamentClearCacheServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentClearCache' => 'CmsMulti\\FilamentClearCache\\Facades\\FilamentClearCache',
+    ),
+  ),
+  'filament/filament' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\FilamentServiceProvider',
+    ),
+  ),
+  'filament/forms' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\Forms\\FormsServiceProvider',
+    ),
+  ),
+  'filament/notifications' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\Notifications\\NotificationsServiceProvider',
+    ),
+  ),
+  'filament/support' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\Support\\SupportServiceProvider',
+    ),
+  ),
+  'filament/tables' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\Tables\\TablesServiceProvider',
+    ),
+  ),
+  'filipfonal/filament-log-manager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'FilipFonal\\FilamentLogManager\\FilamentLogManagerServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentLogManager' => 'FilipFonal\\FilamentLogManager\\Facades\\FilamentLogManager',
+    ),
+  ),
+  'ibrahim-bedir/filament-dynamic-settings-page' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'IbrahimBedir\\FilamentDynamicSettingsPage\\DynamicSettingsPageServiceProvider',
+    ),
+  ),
+  'jeffgreco13/filament-breezy' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'JeffGreco13\\FilamentBreezy\\FilamentBreezyServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentBreezy' => 'JeffGreco13\\FilamentBreezy\\Facades\\FilamentBreezy',
+    ),
+  ),
+  'laravel/sail' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Sail\\SailServiceProvider',
+    ),
+  ),
+  'laravel/sanctum' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Sanctum\\SanctumServiceProvider',
+    ),
+  ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'livewire/livewire' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Livewire\\LivewireServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Livewire' => 'Livewire\\Livewire',
+    ),
+  ),
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
+  'nunomaduro/collision' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'nunomaduro/termwind' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    ),
+  ),
+  'ramnzys/filament-email-log' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Ramnzys\\FilamentEmailLog\\FilamentEmailLogServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentEmailLog' => 'Ramnzys\\FilamentEmailLog\\Facades\\FilamentEmailLog',
+    ),
+  ),
+  'ryangjchandler/blade-capture-directive' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'BladeCaptureDirective' => 'RyanChandler\\BladeCaptureDirective\\Facades\\BladeCaptureDirective',
+    ),
+  ),
+  'spatie/laravel-activitylog' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Activitylog\\ActivitylogServiceProvider',
+    ),
+  ),
+  'spatie/laravel-ignition' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
+    ),
+  ),
+  'spatie/laravel-permission' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
+  'z3d0x/filament-logger' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Z3d0X\\FilamentLogger\\FilamentLoggerServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FilamentLogger' => 'Z3d0X\\FilamentLogger\\Facades\\FilamentLogger',
+    ),
+  ),
+);
