@@ -20,8 +20,7 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationGroup = 'Account';
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 9;
 
     protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
 
@@ -40,7 +39,10 @@ class UserResource extends Resource
         return trans('filament-user::user.resource.single');
     }
 
-    
+    protected static function getNavigationGroup(): ?string
+    {
+        return config('filament-user.group');
+    }
 
     protected function getTitle(): string
     {
@@ -49,21 +51,31 @@ class UserResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                TextInput::make('name')->required()->label(trans('filament-user::user.resource.name')),
-                TextInput::make('email')->email()->required()->label(trans('filament-user::user.resource.email')),
-                Forms\Components\TextInput::make('password')->label(trans('filament-user::user.resource.password'))
-                    ->password()
-                    ->maxLength(255)
-                    ->dehydrateStateUsing(fn ($state) => !empty($state) ? Hash::make($state) : ""),
-                Forms\Components\MultiSelect::make('roles')->relationship('roles', 'name')->label(trans('filament-user::user.resource.roles')),
-            ]);
+        $rows = [
+            TextInput::make('name')->required()->label(trans('filament-user::user.resource.name')),
+            TextInput::make('email')->email()->required()->label(trans('filament-user::user.resource.email')),
+            Forms\Components\TextInput::make('password')->label(trans('filament-user::user.resource.password'))
+                ->password()
+                ->maxLength(255)
+                ->dehydrateStateUsing(static function ($state){
+                    if(!empty($state)){
+                        return Hash::make($state);
+                    }
+            }),
+        ];
+
+        if(config('filament-user.shield')){
+            $rows[] = Forms\Components\MultiSelect::make('roles')->relationship('roles', 'name')->label(trans('filament-user::user.resource.roles'));
+        }
+
+        $form->schema($rows);
+
+        return $form;
     }
 
     public static function table(Table $table): Table
     {
-        return $table
+        $table
             ->columns([
                 TextColumn::make('id')->sortable()->label(trans('filament-user::user.resource.id')),
                 TextColumn::make('name')->sortable()->searchable()->label(trans('filament-user::user.resource.name')),
@@ -75,9 +87,6 @@ class UserResource extends Resource
                     ->dateTime('M j, Y')->sortable(),
 
             ])
-            ->prependActions([
-                Impersonate::make('impersonate'),
-            ])
             ->filters([
                 Tables\Filters\Filter::make('verified')
                     ->label(trans('filament-user::user.resource.verified'))
@@ -86,13 +95,14 @@ class UserResource extends Resource
                     ->label(trans('filament-user::user.resource.unverified'))
                     ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
-    }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
+        if(config('filament-user.impersonate')){
+            $table->prependActions([
+                Impersonate::make('impersonate'),
+            ]);
+        }
+
+        return $table;
     }
 
     public static function getPages(): array
