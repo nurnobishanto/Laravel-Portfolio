@@ -22,6 +22,7 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
 class BlogResource extends Resource
 {
@@ -54,7 +55,7 @@ class BlogResource extends Resource
                 TextInput::make('slug')->required()->placeholder('Enter your slug')
                     ->unique(ignorable: fn ($record) => $record),
                 FileUpload::make('featured_image'),
-                RichEditor::make('body'),
+                TinyEditor::make('body'),
             ]);
     }
 

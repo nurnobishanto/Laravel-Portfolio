@@ -19,6 +19,7 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
 class ServiceResource extends Resource
 {
@@ -48,7 +49,7 @@ class ServiceResource extends Resource
                     ->unique(ignorable: fn ($record) => $record),
                 TextInput::make('sub_title')->required(),
                 FileUpload::make('image')->required(),
-                RichEditor::make('body')->required(),
+                TinyEditor::make('body')->required(),
             ]);
     }
 
