@@ -152,7 +152,6 @@
       <path value="$PROJECT_DIR$/vendor/filipfonal/filament-log-manager" />
       <path value="$PROJECT_DIR$/vendor/jeffgreco13/filament-breezy" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
-      <path value="$PROJECT_DIR$/vendor/mohamedsabil83/filament-forms-tinyeditor" />
       <path value="$PROJECT_DIR$/vendor/queents/console-helpers" />
     </include_path>
   </component>
