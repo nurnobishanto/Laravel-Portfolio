@@ -60,6 +60,7 @@ class PortfolioResource extends Resource
                 TextInput::make('client')
                     ->maxLength(255),
                 DatePicker::make('date'),
+                RichEditor::make('about'),
                 RichEditor::make('details'),
                 FileUpload::make('image'),
 

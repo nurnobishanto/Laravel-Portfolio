@@ -498,7 +498,7 @@
                                             <div class="popup_details">
                                                 <div class="main_details">
                                                     <div class="textbox">
-                                                        {!! $portfolio->details !!}
+                                                        {!! $portfolio->about !!}
                                                     </div>
                                                     <div class="detailbox">
                                                         <ul>
@@ -523,7 +523,35 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-
+                                                </div>
+                                                <div class="additional_images">
+                                                    {!! $portfolio->details !!}
+{{--                                                    <ul>--}}
+{{--                                                        <li>--}}
+{{--                                                            <div class="list_inner">--}}
+{{--                                                                <div class="my_image">--}}
+{{--                                                                    <img src="img/thumbs/4-2.jpg" alt="" />--}}
+{{--                                                                    <div class="main" data-img-url="img/portfolio/1.jpg"></div>--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </li>--}}
+{{--                                                        <li>--}}
+{{--                                                            <div class="list_inner">--}}
+{{--                                                                <div class="my_image">--}}
+{{--                                                                    <img src="img/thumbs/4-2.jpg" alt="" />--}}
+{{--                                                                    <div class="main" data-img-url="img/portfolio/2.jpg"></div>--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </li>--}}
+{{--                                                        <li>--}}
+{{--                                                            <div class="list_inner">--}}
+{{--                                                                <div class="my_image">--}}
+{{--                                                                    <img src="img/thumbs/4-2.jpg" alt="" />--}}
+{{--                                                                    <div class="main" data-img-url="img/portfolio/3.jpg"></div>--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </li>--}}
+{{--                                                    </ul>--}}
                                                 </div>
                                             </div>
                                         </div>

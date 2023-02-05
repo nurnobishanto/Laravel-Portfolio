@@ -21,6 +21,7 @@ class Portfolio extends Model
         'url',
         'client',
         'date',
+        'about',
         'details',
         'image',
     ];

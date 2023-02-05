@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('url')->nullable();
             $table->string('client')->nullable();
             $table->string('date')->nullable();
+            $table->text('about')->nullable();
             $table->longText('details')->nullable();
             $table->longText('image')->nullable();
             $table->timestamps();
