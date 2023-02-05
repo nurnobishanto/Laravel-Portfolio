@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Company;
+use App\Models\Page;
 use App\Models\Portfolio;
 use App\Models\PortfolioCategory;
 use App\Models\Service;
@@ -30,7 +31,18 @@ class WebsiteController extends Controller
         return "hellow World";
     }
     public function content($slug){
-        return "hellow World";
+
+        $page = Page::where('slug',$slug)->first();
+        $blog = Blog::where('slug',$slug)->first();
+        if ($page){
+            return $page->body;
+        }elseif ($blog){
+            return $blog->body;
+        }
+        else{
+            return redirect('https://old.nurnobishanto.com/'.$slug);
+        }
+
     }
     public function services(){
         return "hellow World";
