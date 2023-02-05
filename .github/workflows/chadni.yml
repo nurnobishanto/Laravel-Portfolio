@@ -15,3 +15,5 @@ jobs:
         username: ${{ secrets.ftp_username_chadni }}
         password: ${{ secrets.ftp_password_chadni }}
         port: 21
+        exclude: |
+          .env
