@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('migrate',function (){
+    Artisan::call('migrate:fresh --seed');
+    return Artisan::output();
+});
 
 Route::get('/',[WebsiteController::class,'index'])->name('home');
 Route::get('/contact',[WebsiteController::class,'contact'])->name('contact');
@@ -27,7 +31,4 @@ Route::get('/portfolio/{slug}',[WebsiteController::class,'portfolios'])->name('p
 Route::post('/contact-store',[ContactController::class,'contact_store']);
 Route::get('/{slug}',[WebsiteController::class,'content'])->name('content');
 
-Route::get('migrate',function (){
-    Artisan::call('migrate:fresh --seed');
-    return Artisan::output();
-});
+
