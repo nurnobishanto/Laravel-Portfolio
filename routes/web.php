@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WebsiteController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,8 @@ Route::get('/portfolios',[WebsiteController::class,'portfolios'])->name('portfol
 Route::get('/portfolio/{slug}',[WebsiteController::class,'portfolios'])->name('portfolio');
 Route::post('/contact-store',[ContactController::class,'contact_store']);
 Route::get('/{slug}',[WebsiteController::class,'content'])->name('content');
+
+Route::get('migrate',function (){
+    Artisan::call('migrate:fresh --seed');
+    return Artisan::output();
+});
